@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-size: 18px;
+}
+
+body {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+/*
+** headings
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 1.5em 0 0.5em;
+}
+
+h1 {
+	@apply text-3xl;
+	font-weight: 800;
+}
+
+h2 {
+	@apply text-2xl;
+	font-weight: 600;
+}
+
+h3 {
+	@apply text-xl;
+}
+
+h4,
+h5,
+h6 {
+	@apply text-lg;
+	font-weight: bold;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Content Manager</title>
+		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+		<link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+	</head>
+
+	<body>
+		<!-- Include the script that builds the page and powers Netlify CMS -->
+		<script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+		<script>
+			const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+			const formatDate = (date) => {
+				const dateObj = new Date(date);
+				const month = dateObj.getMonth() + 1;
+				const day = dateObj.getDate();
+				const year = dateObj.getFullYear();
+				return `${months[month - 1]} ${day}, ${year}`;
+			};
+
+			CMS.registerPreviewStyle("/admin/preview.css");
+			CMS.registerPreviewStyle("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+			const PostPreview = createClass({
+				render: function () {
+					const entry = this.props.entry;
+					const image = entry.getIn(["data", "image"]);
+					const bg = this.props.getAsset(image);
+					return h("div", {}, h("h1", {}, entry.getIn(["data", "title"])), h("img", { src: bg.toString() }), h("p", { className: "post-date" }, formatDate(entry.getIn(["data", "date"]))), h("div", { className: "post-content" }, this.props.widgetFor("body")));
+				},
+			});
+
+			CMS.registerPreviewTemplate("posts", PostPreview);
+		</script>
+	</body>
+</html>

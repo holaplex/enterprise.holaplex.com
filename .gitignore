@@ -1,0 +1,10 @@
+.next/
+node_modules/
+/npm-debug.log
+.DS_Store
+out/
+.netlify/functions-serve
+.netlify/plugins
+.netlify/edge-functions
+.netlify/edge-functions-import-map.json
+public/admin/config.yml
