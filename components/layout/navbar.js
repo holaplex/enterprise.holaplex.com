@@ -12,7 +12,7 @@ const NavItem = ({ children, href }) => {
 
 const Navbar = () => {
 	return (
-		<div className="relative z-50 text-white border-b border-[#242E56]">
+		<div className="relative z-50 text-white">
 			<nav className="max-w-7xl mx-auto w-11/12 px-2 py-4 box-border flex justify-between">
 				<h2 className="my-0 font-semibold text-white">
 					<SmartLink href="/">
