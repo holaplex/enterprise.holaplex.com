@@ -68,6 +68,11 @@ export default function Index() {
 
 			<Section className="text-black bg-white">
 				<Container className="text-center">
+					<div className="flex flex-wrap justify-around w-full mb-8">
+						<div className="w-12 lg:w-24 opacity-40"><Image alt='' src='/img/logos/axie-infinity.png' width={239} height={109} /></div>
+						<div className="w-12 lg:w-24"><Image alt='' src='/img/logos/campuslegends.png' width={457} height={128} /></div>
+						<div className="w-12 lg:w-24 opacity-40"><Image alt='' src='/img/logos/opensea.png' width={488} height={117} /></div>
+					</div>
 					<p className="text-xl mb-4">"Nice work on your Holaplex. <b>Holaplex was the best investment I ever made.</b> Your company is truly upstanding and is behind its product 100%."</p>
 					<p className="font-bold text-xl text-gray-400">- Ariela L, CEO</p>
 				</Container>
