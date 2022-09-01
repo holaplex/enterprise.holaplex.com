@@ -11,8 +11,10 @@ import Link from "next/link";
 const SmartLink = ({ children, href, className }) => {
 	if (href.substr(0, 1) === "/" && href.substr(0, 2) !== "//") {
 		return (
-			<Link href={href} className={className}>
-				{children}
+			<Link href={href}>
+				<a className={className}>
+					{children}
+				</a>
 			</Link>
 		);
 	}

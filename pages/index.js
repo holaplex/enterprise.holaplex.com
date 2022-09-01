@@ -10,6 +10,7 @@ import Button from "../components/button";
 import { css } from "@emotion/react";
 import SubtleGlassTile from "../components/subtleGlassTile";
 import * as Icon from 'akar-icons';
+import SmartLink from "../components/smartlink";
 
 const GradientText = styled.h1`
     background: linear-gradient(263.43deg, rgba(248, 94, 193, 1) -19.48%, rgba(0, 89, 208, 1) 120.66%);
@@ -38,9 +39,21 @@ export default function Index() {
 				<Container className="flex flex-col lg:my-24 justify-center items-center relative z-50">
 					<p>Go multi-dimensional to expand the value of your brand.</p>
 					<h1>Enterprise-grade NFT tools with compliance standards built in.</h1>
-					<p className="my-4 lg:my-8">
-						<Button>Holaplex API</Button>
-						<Button>Holaplex For Developers</Button>
+					<p className="my-4 lg:my-8 flex flex-wrap justify-center gap-4">
+						<SubtleGlassTile className="w-48 justify-end">
+							<img width="32" height="32" src='/img/icons/external-link.svg' alt='' className="absolute top-0 right-0" />
+							<p className="w-full text-left mb-0 mt-6 -mb-2 -ml-2">
+								Holaplex API
+							</p>
+							<SmartLink href='/' className="absolute inset-0 z-50" />
+						</SubtleGlassTile>
+						<SubtleGlassTile className="w-48 justify-end">
+							<img width="32" height="32" src='/img/icons/external-link.svg' alt='' className="absolute top-0 right-0" />
+							<p className="w-full text-left mb-0 mt-6 -mb-2 -ml-2">
+								Holaplex For Developers
+							</p>
+							<SmartLink href='/' className="absolute inset-0 z-50" />
+						</SubtleGlassTile>
 					</p>
 				</Container>
 			</Section>
@@ -78,43 +91,43 @@ export default function Index() {
 				</Container>
 				<Container variant="wide">
 					<div className="gap-4 flex flex-wrap justify-center">
-						<SubtleGlassTile>
+						<SubtleGlassTile className="blue-section">
 							<Icon.Command />
 							<p>NFT Command Center</p>
 						</SubtleGlassTile>
-						<SubtleGlassTile>
+						<SubtleGlassTile className="blue-section">
 							<img src='/img/icons/flag.svg' width="50" height="50" alt='' />
 							<p>Whitelabel Marketplace</p>
 						</SubtleGlassTile>
-						<SubtleGlassTile>
+						<SubtleGlassTile className="blue-section">
 							<img src='/img/icons/api-tools.svg' width="50" height="50" alt='' />
 							<p>API Tools</p>
 						</SubtleGlassTile>
-						<SubtleGlassTile>
+						<SubtleGlassTile className="blue-section">
 							<img src='/img/icons/users.svg' width="50" height="50" alt='' />
 							<p>Wallet / User Management</p>
 						</SubtleGlassTile>
-						<SubtleGlassTile>
+						<SubtleGlassTile className="blue-section">
 							<img src='/img/icons/wallet.svg' width="50" height="50" alt='' />
 							<p>Custodial Wallets</p>
 						</SubtleGlassTile>
-						<SubtleGlassTile>
+						<SubtleGlassTile className="blue-section">
 							<Icon.CheckBox />
 							<p>KYC</p>
 						</SubtleGlassTile>
-						<SubtleGlassTile>
+						<SubtleGlassTile className="blue-section">
 							<img src='/img/icons/speed-dial.svg' width="50" height="50" alt='' />
 							<p>Compliance</p>
 						</SubtleGlassTile>
-						<SubtleGlassTile>
+						<SubtleGlassTile className="blue-section">
 							<img src='/img/icons/treasury.svg' width="50" height="50" alt='' />
 							<p>Enterprise Treasury</p>
 						</SubtleGlassTile>
-						<SubtleGlassTile>
+						<SubtleGlassTile className="blue-section">
 							<img src='/img/icons/on-ramp.svg' width="50" height="50" alt='' />
 							<p>Fiat On Ramp</p>
 						</SubtleGlassTile>
-						<SubtleGlassTile>
+						<SubtleGlassTile className="blue-section">
 							<img src='/img/icons/utility-management.svg' width="50" height="50" alt='' />
 							<p>Utility Management</p>
 						</SubtleGlassTile>
@@ -123,7 +136,7 @@ export default function Index() {
 			</Section>
 
 			<div className="text-black bg-white relative overflow-hidden">
-				<Section className="relative my-12 lg:my-24">
+				<Section className="relative my-6 lg:my-12 py-6 lg:py-12">
 					<div className="absolute rounded-full w-24 lg:w-48 aspect-square bg-[#B4419F] lg:top-1/4 right-[10%] blur-[256px]" />
 					<div className="lg:absolute relative top-0 bottom-0 right-0 w-full lg:w-1/2 lg:aspect-auto aspect-video">
 						<Image src='/img/laptop.png' layout='fill' objectFit="contain" objectPosition="center right" />
@@ -136,7 +149,7 @@ export default function Index() {
 					</Container>
 				</Section>
 
-				<Section className="relative my-12 lg:my-24">
+				<Section className="relative my-6 lg:my-12 py-6 lg:py-12">
 					<div className="absolute rounded-full w-24 lg:w-48 aspect-square bg-[#B4419F] lg:top-1/4 left-[10%] blur-[256px]" />
 					<div className="lg:absolute relative top-0 bottom-0 left-0 w-full lg:w-1/2 lg:aspect-auto aspect-video">
 						<Image src='/img/phone.png' layout='fill' objectFit="contain" objectPosition="center" />
