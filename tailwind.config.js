@@ -30,9 +30,12 @@ module.exports = {
 					900: "#6BE2F8",
 				},
 				green: "#9fca56",
-				purple: "#966db7",
+				brandPurple: {
+					DEFAULT: '#000929',
+					900: "#966db7",
+				},
 				red: {
-					default: "#cd3f45",
+					DEFAULT: "#cd3f45",
 					100: "#F597D4",
 				},
 			},

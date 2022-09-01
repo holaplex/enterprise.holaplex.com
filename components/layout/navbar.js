@@ -1,7 +1,6 @@
 import React from "react";
-import Button from "../button";
+import Image from "next/image";
 import SmartLink from "../smartlink";
-import styled from "@emotion/styled";
 
 const NavItem = ({ children, href }) => {
 	return (
@@ -13,17 +12,31 @@ const NavItem = ({ children, href }) => {
 
 const Navbar = () => {
 	return (
-		<div className="bg-base text-content theme-light bg-gradient-to-r from-gradient-blue-100 to-gradient-blue-200">
+		<div className="relative z-50 text-white border-b border-[#192763]">
 			<nav className="max-w-7xl mx-auto w-11/12 px-2 py-4 box-border flex justify-between">
 				<h2 className="my-0 font-semibold text-white">
-					<SmartLink href="https://www.holaplex.com/">Holaplex</SmartLink>
-					<span className="text-gray-300">
-						{" "}
-						- <SmartLink href="/">Enterprise</SmartLink>
-					</span>
+					<SmartLink href="/">
+						<Image src="/img/enterprise.svg" width={165} height={15} alt="" />
+					</SmartLink>
 				</h2>
 				<ul id="navItems" className="hidden md:block">
-					{/*<GetAPIButton />*/}
+					<NavItem href='/'>
+						Home
+					</NavItem>
+					<NavItem href='/products'>
+						Products
+					</NavItem>
+					<NavItem href='/team'>
+						Team
+					</NavItem>
+					<NavItem href='/blog'>
+						Blog
+					</NavItem>
+				</ul>
+				<ul id="navItems" className="hidden md:block">
+					<NavItem href='/contact'>
+						Contact Us
+					</NavItem>
 				</ul>
 			</nav>
 		</div>

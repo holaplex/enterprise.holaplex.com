@@ -5,140 +5,165 @@ import Section from "../components/section";
 import Container from "../components/container";
 import Metadata from "../components/metadata";
 import styled from "@emotion/styled";
-import { css } from "@emotion/react";
 import Image from "next/image";
 import Button from "../components/button";
+import { css } from "@emotion/react";
+import SubtleGlassTile from "../components/subtleGlassTile";
+import * as Icon from 'akar-icons';
 
 const GradientText = styled.h1`
-    background: linear-gradient(263.43deg, #528ad5 -19.48%, #ffa2de 120.66%);
+    background: linear-gradient(263.43deg, rgba(248, 94, 193, 1) -19.48%, rgba(0, 89, 208, 1) 120.66%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-	font-size: 45px;
-	max-width: 9em;
+	margin-top: 0;
 `;
 
 export default function Index() {
 	const { title, description } = attributes;
 
 	return (
-		<Layout theme="theme-primary">
+		<Layout>
 			<Metadata title={title} description={description} image='/img/screenshot.jpg' />
 
-			<Section className="text-white text-center">
-				<div className="flex flex-col p-9 justify-center items-center w-full bg-gradient-to-r from-gradient-blue-100 to-gradient-blue-200">
-					<p> Go multi-dimensional to expand the value of your brand.</p>
-					<GradientText className="mt-0">Enterprise-grade NFT tools with compliance standards built in.</GradientText>
+			<Section className="text-white text-center relative -mt-24 pt-24 bg-[#030E37] overflow-hidden" css={css`
+				background: linear-gradient(270deg, #030D31 6.74%, #030E3B 52.46%, #030C35 54.7%, #010C2C 64.64%, #010825 99.17%);
+			`}>
+				<div className="absolute rounded-full w-96 h-24 bg-[#6680F8] top-1/4 left-[10%] blur-[120px]" />
+				<div className="absolute rounded-full w-24 h-48 bg-[#B4419F] bottom-1/4 left-[10%] blur-[120px]" />
+				<div className="absolute rounded-full w-24 h-48 bg-[#B4419F] bottom-1/3 right-[10%] blur-[120px]" />
+
+
+				<Container className="flex flex-col lg:my-24 justify-center items-center relative z-50">
+					<p>Go multi-dimensional to expand the value of your brand.</p>
+					<h1>Enterprise-grade NFT tools with compliance standards built in.</h1>
 					<p className="my-4 lg:my-8">
 						<Button>Holaplex API</Button>
 						<Button>Holaplex For Developers</Button>
 					</p>
-				</div>
-			</Section>
-
-
-			<Section className="text-black bg-white" style={{ backgroundImage: 'radial-gradient(circle at 100% 100%, #F597D4, #ffff 25%, #fff 75%)' }}>
-				<Container>
-					<h1>The Holaplex API</h1>
-					<div className="rounded-xl border p-4 backdrop-blur-lg w-full lg:w-3/5 relative z-50">
-						<div className="flex flex-col gap-5 max-w-sm">
-							<div>✓ Build apps that run fast with low latency</div>
-							<div>✓ Replace your get program accounts calls</div>
-							<div>✓ Access Solana blockchain through GraphQL</div>
-						</div>
-					</div>
-					<div className="rounded-full w-24 aspect-square -mt-16 ml-24 bg-gradient-to-r from-gradient-blue-700 to-gradient-blue-900" />
-
-					<div className="rounded-xl bg-gray-800 text-white border p-4 py-2 w-full ml-auto lg:w-1/2 relative z-50 flex flex-col lg:-mt-24">
-						<div className="flex gap-2 pb-2 -ml-2">
-							<div className="w-3 h-3 rounded-full" style={{ background: '#FF5F56' }} />
-							<div className="w-3 h-3 rounded-full" style={{ background: '#FFBD2E' }} />
-							<div className="w-3 h-3 rounded-full" style={{ background: '#27C93F' }} />
-						</div>
-						<pre css={css`
-							div {
-								padding-left: 2em;
-								&.truncate {
-									padding-left: 0;
-								}
-							}
-						`}>
-							&#123;
-							<div>
-								<span className="text-purple">nfts</span>(
-								<div>
-									<div className="truncate"><span className="text-green">owners</span>: <span className="text-gradient-blue-700">&#x22;70UUEdptZnZVhSet4q0bU9PtpPfiNUEJ8ftPnrC6YEaa&#x22;</span></div>
-									<span className="text-green">offset</span>: 0,<br />
-									<span className="text-green">limit</span>: 25
-								</div>
-								) &#123;
-								<div className="text-purple">
-									name<br />
-									mintAddress<br />
-									image(<span className="text-green">width</span>: <span className="text-red">1400</span>) <span className="animate-pulse bg-white">&nbsp;</span>
-								</div>
-								&#125;
-							</div>
-							&#125;
-						</pre>
-					</div>
 				</Container>
 			</Section>
 
-			<Section className="text-white" style={{ background: '#000929' }}>
-				<Container className="flex lg:flex-row flex-col items-center lg:items-stretch gap-4 text-center justify-around">
-					<div className="border border-gray-600 rounded-xl p-2 max-w-xs w-full">
-						<div className="w-3/5 mx-auto aspect-square">
-							<Image src='/img/cross-protocol.png' width={314} height={300} />
-						</div>
-						<h3 className="text-white font-bold">Cross Protocol Query Interface</h3>
-						<p className="text-gray-200">Query multiple on-chain actions across different Solana programs.</p>
-					</div>
-					<div className="border border-gray-600 rounded-xl p-2 max-w-xs w-full">
-						<div className="w-3/5 mx-auto aspect-square">
-							<Image src='/img/meter.png' width={320} height={320} />
-						</div>
-						<h3 className="text-white font-bold">High Performance</h3>
-						<p className="text-gray-200">Low latency performance with sub millisecond data query of on-chain data and realtime updates.</p>
-					</div>
-					<div className="border border-gray-600 rounded-xl p-2 max-w-xs w-full">
-						<div className="w-3/5 mx-auto aspect-square">
-							<Image src='/img/shield.png' width={330} height={300} />
-						</div>
-						<h3 className="text-white font-bold">Reliable Infrastructure</h3>
-						<p className="text-gray-200">99.9% uptime plus 24 hour support ensures your apps are always working.</p>
-					</div>
-				</Container>
-			</Section>
 			<Section className="text-black bg-white">
-				<Container className="lg:flex items-center gap-4">
-					<div className="lg:w-1/2">
-						<Image src="/img/circuit.png" alt='' width={962} height={698} />
-					</div>
-					<div className="lg:w-1/2 lg:text-left text-center">
-						<h1 className="mt-0">The Solana NFT API</h1>
-						<p>Get the performance you need to power your on-chain Solana applications</p>
-						<p className="mt-4">
-						</p>
-					</div>
+				<Container className="text-center">
+					<p className="text-xl mb-4">"Nice work on your Holaplex. Holaplex was the best investment I ever made. Your company is truly upstanding and is behind its product 100%."</p>
+					<p className="font-bold text-xl text-gray-400">- Ariela L, CEO</p>
 				</Container>
-			</Section>
-			<Section className="bg-white">
 				<Container>
-					<div className="text-white bg-black rounded-2xl w-full p-6 relative overflow-hidden">
-						<div className="hidden lg:block">
-							<Image src='/img/purple-thing.png' alt='' layout='fill' objectFit="cover" />
+					<div className="flex flex-wrap justify-around items-center">
+						<div className="my-2">
+							<GradientText className="mt-0 inline lg:w-1/4 font-medium">10,000</GradientText>
+							<h4 className="mt-0 font-light">creators use our tools</h4>
 						</div>
-						<div className="lg:w-1/2 relative z-20">
-							<h1 className="mt-0">Want to index your protocol?</h1>
-							<p className="text-gray-200">Be a part of the growing number of protocols indexing with us.</p>
-							<p className="mt-4">
-							</p>
+						<div className="hidden lg:block h-16 border-r" />
+						<div className="my-2">
+							<GradientText className="mt-0 inline lg:w-1/4 font-medium">40+</GradientText>
+							<h4 className="mt-0 font-light">whitelabeled marketplaces</h4>
+						</div>
+						<div className="hidden lg:block h-16 border-r" />
+						<div className="my-2">
+							<GradientText className="mt-0 inline lg:w-1/4 font-medium">15+</GradientText>
+							<h4 className="mt-0 font-light">enterprise customers</h4>
 						</div>
 					</div>
 				</Container>
 			</Section>
+
+			<Section className="text-black bg-white relative" style={{ backgroundColor: '#A0E0FA' }}>
+				<Image src='/img/gradient.jpg' layout='fill' className="absolute inset-0" objectFit="cover" objectPosition="center" />
+				<Container className="text-center relative z-10">
+					<GradientText>Scalable Technologies For Enterprise</GradientText>
+					<p>Obtain limitless potential. Built with our suite of open-source software tools and contributions from leading integration partners.</p>
+				</Container>
+				<Container variant="wide">
+					<div className="gap-4 flex flex-wrap justify-center">
+						<SubtleGlassTile>
+							<Icon.Command />
+							<p>NFT Command Center</p>
+						</SubtleGlassTile>
+						<SubtleGlassTile>
+							<img src='/img/icons/flag.svg' width="50" height="50" alt='' />
+							<p>Whitelabel Marketplace</p>
+						</SubtleGlassTile>
+						<SubtleGlassTile>
+							<img src='/img/icons/api-tools.svg' width="50" height="50" alt='' />
+							<p>API Tools</p>
+						</SubtleGlassTile>
+						<SubtleGlassTile>
+							<img src='/img/icons/users.svg' width="50" height="50" alt='' />
+							<p>Wallet / User Management</p>
+						</SubtleGlassTile>
+						<SubtleGlassTile>
+							<img src='/img/icons/wallet.svg' width="50" height="50" alt='' />
+							<p>Custodial Wallets</p>
+						</SubtleGlassTile>
+						<SubtleGlassTile>
+							<Icon.CheckBox />
+							<p>KYC</p>
+						</SubtleGlassTile>
+						<SubtleGlassTile>
+							<img src='/img/icons/speed-dial.svg' width="50" height="50" alt='' />
+							<p>Compliance</p>
+						</SubtleGlassTile>
+						<SubtleGlassTile>
+							<img src='/img/icons/treasury.svg' width="50" height="50" alt='' />
+							<p>Enterprise Treasury</p>
+						</SubtleGlassTile>
+						<SubtleGlassTile>
+							<img src='/img/icons/on-ramp.svg' width="50" height="50" alt='' />
+							<p>Fiat On Ramp</p>
+						</SubtleGlassTile>
+						<SubtleGlassTile>
+							<img src='/img/icons/utility-management.svg' width="50" height="50" alt='' />
+							<p>Utility Management</p>
+						</SubtleGlassTile>
+					</div>
+				</Container>
+			</Section>
+
+			<div className="text-black bg-white relative overflow-hidden">
+				<Section className="relative my-12 lg:my-24">
+					<div className="absolute rounded-full w-24 lg:w-48 aspect-square bg-[#B4419F] lg:top-1/4 right-[10%] blur-[128px]" />
+					<div className="lg:absolute relative top-0 bottom-0 right-0 w-full lg:w-1/2 lg:aspect-auto aspect-video">
+						<Image src='/img/laptop.png' layout='fill' objectFit="contain" objectPosition="center right" />
+					</div>
+					<Container className="left relative z-10">
+						<div className="lg:w-1/2">
+							<GradientText>Easily create and manage</GradientText>
+							<p>Enterprise grade NFT backend enables you to easily create and manage all of your brands NFT assets. Create NFT drops at scale, manage utilization, distribute whitelist access, and bulk airdrop tokens. Simplified control and powerful utility with just a few Clicks.</p>
+						</div>
+					</Container>
+				</Section>
+
+				<Section className="relative my-12 lg:my-24">
+					<div className="absolute rounded-full w-24 lg:w-48 aspect-square bg-[#B4419F] lg:top-1/4 left-[10%] blur-[128px]" />
+					<div className="lg:absolute relative top-0 bottom-0 left-0 w-full lg:w-1/2 lg:aspect-auto aspect-video">
+						<Image src='/img/phone.png' layout='fill' objectFit="contain" objectPosition="center" />
+					</div>
+					<Container className="left relative z-10">
+						<div className="lg:w-1/2 lg:ml-auto">
+							<GradientText>Feature complete whitelabel marketplaces</GradientText>
+							<p>Powerful branded marketplaces to host secondary NFT sales. Over 40 brands utilize our whitelabel marketplace tools to aggregate listings across all marketplaces in one branded experience. With new integrations every month, from a community of integration partners, your marketplace will always have the latest and greatest that web3 has to offer.</p>
+						</div>
+					</Container>
+				</Section>
+			</div>
+
+			<Section className="bg-brandPurple text-white relative overflow-hidden">
+				<div className="absolute rounded-full w-24 h-24 bg-[#B4419F] top-1/4 right-1/4" />
+				<div className="absolute rounded-full w-24 h-24 bg-[#2E22AC] top-1/3 right-1/3" />
+				<div className="absolute rounded-full w-24 h-24 bg-[#B4419F] bottom-1/4 left-1/4" />
+				<div className="absolute rounded-full w-24 h-24 bg-[#2E22AC] bottom-1/3 left-1/3" />
+				<div className="absolute inset-0 z-10 backdrop-blur-3xl" />
+				<Container className="relative z-20">
+					<GradientText>Powerful APIs for web3 apps</GradientText>
+				</Container>
+				<Container className="relative z-20">
+					<GradientText>Powerful APIs for web3 apps</GradientText>
+				</Container>
+			</Section>
+
 		</Layout>
 	);
 }
