@@ -66,7 +66,7 @@ export default function Index() {
 				</Container>
 			</Section>
 
-			<Section className="text-black bg-white">
+			<Section className="text-black bg-white lg:py-16">
 				<Container className="text-center">
 					<div className="flex flex-wrap justify-around w-full mb-8">
 						<div className="w-12 lg:w-24 opacity-40"><Image alt='' src='/img/logos/axie-infinity.png' width={239} height={109} /></div>
@@ -210,7 +210,7 @@ export default function Index() {
 					</div>
 				</Container>
 			</Section>
-			<Section className="bg-white text-black relative overflow-hidden text-center">
+			<Section className="bg-white text-black lg:py-20 relative overflow-hidden text-center">
 				<div className="absolute inset-0 z-10 opacity-50">
 					<Image src='/img/lines.svg' layout='fill' objectFit="cover" />
 				</div>
