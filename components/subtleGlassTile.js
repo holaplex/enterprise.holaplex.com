@@ -36,7 +36,7 @@ const SubtleGlassTile = styled.div`
 	&.blue-section {
 		justify-content: space-between;
 		align-items: center;
-		width: 13rem;
+		width: 12.8rem;
 		min-height: 7rem;
 		svg, img {
 			margin: 0 auto;

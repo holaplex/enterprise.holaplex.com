@@ -1,22 +1,22 @@
 import React from "react";
 import styled from "@emotion/styled";
+import SmartLink from "./smartlink";
 
 const StyledButton = styled.button`
-	background-color: var(--theme-base-light);
-	color: var(--theme-content-light);
+	background-color: #528AD5;
+	color: #FFFFFF;
 	text-align: center;
-	transition: background-color 0.2s ease-in-out;
-	&:hover {
-		background-color: var(--theme-base);
-	}
-	&:active {
-		color: var(--theme-content-dark);
-	}
 `;
 
 const Button = (props) => {
-	const { children, className } = props;
-	return <StyledButton className={"rounded font-bold py-2 px-4 " + className}>{children}</StyledButton>;
+	const { children, className, href } = props;
+	const button = <StyledButton className={"rounded font-bold py-2 px-4 lg:py-3 lg:px-16 mt-4 lg:mt-8 " + className}>{children}</StyledButton>;
+	if (href) {
+		return <SmartLink href={href}>
+			{button}
+		</SmartLink>
+	}
+	return button;
 };
 
 export default Button;

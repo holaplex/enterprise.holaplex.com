@@ -26,7 +26,7 @@ const GradientText = styled.span`
 	}
 	${gradientTextCSS}
 	margin-top: 0;
-	display: inline-block;
+	display: inline;
 `;
 
 export default function Index() {
@@ -53,14 +53,14 @@ export default function Index() {
 							<p className="w-full text-left mb-0 mt-6 -mb-2 -ml-2">
 								Holaplex API
 							</p>
-							<SmartLink href='/' className="absolute inset-0 z-50" />
+							<SmartLink href='https://devtools.holaplex.com/' className="absolute inset-0 z-50" />
 						</SubtleGlassTile>
 						<SubtleGlassTile className="w-48 justify-end">
 							<img width="32" height="32" src='/img/icons/external-link.svg' alt='' className="absolute top-0 right-0" />
 							<p className="w-full text-left mb-0 mt-6 -mb-2 -ml-2">
 								Holaplex For Developers
 							</p>
-							<SmartLink href='/' className="absolute inset-0 z-50" />
+							<SmartLink href='https://devtools.holaplex.com/' className="absolute inset-0 z-50" />
 						</SubtleGlassTile>
 					</div>
 				</Container>
@@ -140,6 +140,9 @@ export default function Index() {
 							<p>Utility Management</p>
 						</SubtleGlassTile>
 					</div>
+					<div className="relative z-10 text-center">
+						<Button href="/products">View all products</Button>
+					</div>
 				</Container>
 			</Section>
 
@@ -151,7 +154,7 @@ export default function Index() {
 					</div>
 					<Container className="left relative z-10">
 						<div className="lg:w-1/2">
-							<h2 className="lg:text-3xl"><GradientText>Easily create and manage</GradientText></h2>
+							<h2 className="lg:text-3xl lg:mt-12 mt-0"><GradientText>Easily create and manage</GradientText></h2>
 							<p>Enterprise grade NFT backend enables you to easily create and manage all of your brands NFT assets. Create NFT drops at scale, manage utilization, distribute whitelist access, and bulk airdrop tokens. Simplified control and powerful utility with just a few Clicks.</p>
 						</div>
 					</Container>
@@ -164,7 +167,7 @@ export default function Index() {
 					</div>
 					<Container className="left relative z-10">
 						<div className="lg:w-1/2 lg:ml-auto">
-							<h2 className="lg:text-3xl"><GradientText>Feature complete whitelabel marketplaces</GradientText></h2>
+							<h2 className="lg:text-3xl lg:mt-12 mt-0"><GradientText>Feature complete whitelabel marketplaces</GradientText></h2>
 							<p>Powerful branded marketplaces to host secondary NFT sales. Over 40 brands utilize our whitelabel marketplace tools to aggregate listings across all marketplaces in one branded experience. With new integrations every month, from a community of integration partners, your marketplace will always have the latest and greatest that web3 has to offer.</p>
 						</div>
 					</Container>
@@ -176,24 +179,40 @@ export default function Index() {
 				<div className="absolute rounded-full w-24 h-24 bg-[#2E22AC] top-1/3 right-1/3" />
 				<div className="absolute rounded-full w-24 h-24 bg-[#B4419F] bottom-1/4 left-1/4" />
 				<div className="absolute rounded-full w-24 h-24 bg-[#2E22AC] bottom-1/3 left-1/3" />
+
+
+				<div className="absolute w-64 aspect-square z-20 bottom-1/2 left-1/4" style={{
+					backgroundImage: 'url(/img/dots.svg)',
+					backgroundSize: 'contain',
+				}} />
+
 				<div className="absolute inset-0 z-10 backdrop-blur-3xl" />
-				<Container className="relative z-20">
-					<h2 className="lg:text-4xl"><GradientText className="gray">Powerful APIs for web3 apps</GradientText></h2>
-					<p className="opacity-60">API’s that power high performance applications built on top of decentralized blockchains. Provide a great user experience that increases engagement without having to get bogged down from slow blockchain speeds. A growing suite of APIs trusted by top Web3 protocols.</p>
+				<Container className="relative z-50">
+					<div className="bg-[#140F35] w-full p-2 lg:p-8 border rounded-lg" style={{ borderColor: 'rgba(255,255,255,0.45)' }}>
+						<h2 className="lg:text-4xl mt-0"><GradientText className="gray">Powerful APIs for web3 apps</GradientText></h2>
+						<p className="opacity-60">API’s that power high performance applications built on top of decentralized blockchains. Provide a great user experience that increases engagement without having to get bogged down from slow blockchain speeds. A growing suite of APIs trusted by top Web3 protocols.</p>
+						<div className="my-8 hidden lg:block">
+							<Image src='/img/cool-chart-2.svg' alt='' width={1128} height={150} />
+						</div>
+						<Button href="/contact">Contact Us</Button>
+					</div>
 				</Container>
-				<Container className="relative z-20">
+				<Container className="relative z-50">
 					<h2 className="lg:text-4xl"><GradientText className="gray">Providing Rapid Innovation</GradientText></h2>
 					<p className="opacity-60">Open-source development provides strategic advantages by increasing velocity of product development, improved security and ultimate flexibility with no licensing fees. Web3 is a rapidly growing technology and building openly ensures the technology stack is never out of date. Holaplex is the open source Web3 contributor.</p>
+					<div className='mt-12 hidden lg:block'>
+						<Image src='/img/cool-chart.svg' alt='' width={1432} height={495} />
+					</div>
 				</Container>
 			</Section>
 			<Section className="bg-white text-black relative overflow-hidden text-center">
-				<div className="absolute inset-0 z-10">
-
+				<div className="absolute inset-0 z-10 opacity-50">
+					<Image src='/img/lines.svg' layout='fill' objectFit="cover" />
 				</div>
 				<Container className="relative z-20">
 					<h2 className="lg:text-4xl"><GradientText>Let's Work Together</GradientText></h2>
 					<p>We make it easy for anyone to buy, sell and engage with NFTs</p>
-					<Button>Contact Us</Button>
+					<Button href="/contact">Contact Us</Button>
 				</Container>
 			</Section>
 
