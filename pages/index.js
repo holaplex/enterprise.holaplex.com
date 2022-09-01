@@ -45,8 +45,8 @@ export default function Index() {
 
 
 				<Container className="flex flex-col lg:my-24 justify-center items-center relative z-50">
-					<p>Go multi-dimensional to expand the value of your brand.</p>
-					<h1>Enterprise-grade NFT tools with compliance standards built in.</h1>
+					<p>Enterprise-grade NFT Solutions at Scale</p>
+					<h1 className="text-2xl lg:text-6xl">Maximize your brand’s potential in Web3</h1>
 					<div className="my-4 lg:my-8 flex flex-wrap justify-center gap-4">
 						<SubtleGlassTile className="w-48 justify-end">
 							<img width="32" height="32" src='/img/icons/external-link.svg' alt='' className="absolute top-0 right-0" />
@@ -73,8 +73,8 @@ export default function Index() {
 						<div className="w-12 lg:w-24"><Image alt='' src='/img/logos/campuslegends.png' width={457} height={128} /></div>
 						<div className="w-12 lg:w-24 opacity-40"><Image alt='' src='/img/logos/opensea.png' width={488} height={117} /></div>
 					</div>
-					<p className="text-xl mb-4">"Nice work on your Holaplex. <b>Holaplex was the best investment I ever made.</b> Your company is truly upstanding and is behind its product 100%."</p>
-					<p className="font-bold text-xl text-gray-400">- Ariela L, CEO</p>
+					<p className="text-xl mb-4">"We are able to quickly and effectively build Solana NFTs drops for our launchpad program with Holaplex’s mint factory tools."</p>
+					<p className="font-bold text-xl text-gray-400">-Adam Montgomery<br />Head of Blockchain </p>
 				</Container>
 				<Container>
 					<div className="flex flex-wrap justify-around items-center text-center lg:text-left">
@@ -159,8 +159,8 @@ export default function Index() {
 					</div>
 					<Container className="left relative z-10">
 						<div className="lg:w-1/2">
-							<h2 className="lg:text-3xl lg:mt-12 mt-0"><GradientText>Easily create and manage</GradientText></h2>
-							<p>Enterprise grade NFT backend enables you to easily create and manage all of your brands NFT assets. Create NFT drops at scale, manage utilization, distribute whitelist access, and bulk airdrop tokens. Simplified control and powerful utility with just a few Clicks.</p>
+							<h2 className="lg:text-3xl lg:mt-12 mt-0"><GradientText>Easily Create And Manage NFTs</GradientText></h2>
+							<p>Enterprise grade NFT backend enables you to easily create and manage all of your brands NFT assets. Create NFT drops at scale, manage utilization, distribute whitelist access, and bulk airdrop tokens. Simplified control and powerful utility with just a few clicks.</p>
 						</div>
 					</Container>
 				</Section>
@@ -173,7 +173,7 @@ export default function Index() {
 					<Container className="left relative z-10">
 						<div className="lg:w-1/2 lg:ml-auto">
 							<h2 className="lg:text-3xl lg:mt-12 mt-0"><GradientText>Feature complete whitelabel marketplaces</GradientText></h2>
-							<p>Powerful branded marketplaces to host secondary NFT sales. Over 40 brands utilize our whitelabel marketplace tools to aggregate listings across all marketplaces in one branded experience. With new integrations every month, from a community of integration partners, your marketplace will always have the latest and greatest that web3 has to offer.</p>
+							<p>Quickly launch a whitelabel NFT marketplace or build a bespoke experience with our fully customized solution. With new integrations every month, from a community of integration partners, your marketplace will always have the latest and greatest that web3 has to offer.</p>
 						</div>
 					</Container>
 				</Section>
@@ -195,7 +195,7 @@ export default function Index() {
 				<Container className="relative z-50">
 					<div className="bg-[#140F35] w-full p-2 lg:p-8 border rounded-lg" style={{ borderColor: 'rgba(255,255,255,0.45)' }}>
 						<h2 className="lg:text-4xl mt-0"><GradientText className="gray">Powerful APIs for web3 apps</GradientText></h2>
-						<p className="opacity-60">API’s that power high performance applications built on top of decentralized blockchains. Provide a great user experience that increases engagement without having to get bogged down from slow blockchain speeds. A growing suite of APIs trusted by top Web3 protocols.</p>
+						<p className="opacity-60">We make your web3 applications run at hyperspeeds. Reading data directly from the blockchain can cause long load times. With our indexer API, we deliver low latency read performance even when TPS is low.</p>
 						<div className="my-8 hidden lg:block">
 							<Image src='/img/cool-chart-2.svg' alt='' width={1128} height={150} />
 						</div>
