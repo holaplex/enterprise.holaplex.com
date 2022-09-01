@@ -20,16 +20,17 @@ h4,
 h5,
 h6 {
 	margin: 1.5em 0 0.5em;
+	font-family: "Ratofy", sans-serif;
 }
 
 h1 {
 	@apply text-3xl;
-	font-weight: 800;
+	font-weight: 400;
 }
 
 h2 {
 	@apply text-2xl;
-	font-weight: 600;
+	font-weight: 400;
 }
 
 h3 {
@@ -40,5 +41,4 @@ h4,
 h5,
 h6 {
 	@apply text-lg;
-	font-weight: bold;
 }

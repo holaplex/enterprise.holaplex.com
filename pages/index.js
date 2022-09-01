@@ -12,13 +12,21 @@ import SubtleGlassTile from "../components/subtleGlassTile";
 import * as Icon from 'akar-icons';
 import SmartLink from "../components/smartlink";
 
-const GradientText = styled.h1`
+const gradientTextCSS = `
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+`;
+const GradientText = styled.span`
     background: linear-gradient(263.43deg, rgba(248, 94, 193, 1) -19.48%, rgba(0, 89, 208, 1) 120.66%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+	&.gray {
+		background: linear-gradient(-263.43deg, rgba(255, 255, 255, 1) -20%, rgba(255, 255, 255, 0.3) 120%);
+		${gradientTextCSS}
+	}
+	${gradientTextCSS}
 	margin-top: 0;
+	display: inline-block;
 `;
 
 export default function Index() {
@@ -39,7 +47,7 @@ export default function Index() {
 				<Container className="flex flex-col lg:my-24 justify-center items-center relative z-50">
 					<p>Go multi-dimensional to expand the value of your brand.</p>
 					<h1>Enterprise-grade NFT tools with compliance standards built in.</h1>
-					<p className="my-4 lg:my-8 flex flex-wrap justify-center gap-4">
+					<div className="my-4 lg:my-8 flex flex-wrap justify-center gap-4">
 						<SubtleGlassTile className="w-48 justify-end">
 							<img width="32" height="32" src='/img/icons/external-link.svg' alt='' className="absolute top-0 right-0" />
 							<p className="w-full text-left mb-0 mt-6 -mb-2 -ml-2">
@@ -54,30 +62,30 @@ export default function Index() {
 							</p>
 							<SmartLink href='/' className="absolute inset-0 z-50" />
 						</SubtleGlassTile>
-					</p>
+					</div>
 				</Container>
 			</Section>
 
 			<Section className="text-black bg-white">
 				<Container className="text-center">
-					<p className="text-xl mb-4">"Nice work on your Holaplex. Holaplex was the best investment I ever made. Your company is truly upstanding and is behind its product 100%."</p>
+					<p className="text-xl mb-4">"Nice work on your Holaplex. <b>Holaplex was the best investment I ever made.</b> Your company is truly upstanding and is behind its product 100%."</p>
 					<p className="font-bold text-xl text-gray-400">- Ariela L, CEO</p>
 				</Container>
 				<Container>
-					<div className="flex flex-wrap justify-around items-center">
+					<div className="flex flex-wrap justify-around items-center text-center lg:text-left">
 						<div className="my-2">
-							<GradientText className="mt-0 inline lg:w-1/4 font-medium">10,000</GradientText>
-							<h4 className="mt-0 font-light">creators use our tools</h4>
+							<h2 className="text-2xl lg:text-4xl m-0"><GradientText className="mt-0 inline lg:w-1/4 font-medium">10,000</GradientText></h2>
+							<p className="mt-0 font-bold">creators use our tools</p>
 						</div>
 						<div className="hidden lg:block h-16 border-r" />
 						<div className="my-2">
-							<GradientText className="mt-0 inline lg:w-1/4 font-medium">40+</GradientText>
-							<h4 className="mt-0 font-light">whitelabeled marketplaces</h4>
+							<h2 className="text-2xl lg:text-4xl m-0"><GradientText className="mt-0 inline lg:w-1/4 font-medium">40+</GradientText></h2>
+							<p className="mt-0 font-bold">whitelabeled marketplaces</p>
 						</div>
 						<div className="hidden lg:block h-16 border-r" />
 						<div className="my-2">
-							<GradientText className="mt-0 inline lg:w-1/4 font-medium">15+</GradientText>
-							<h4 className="mt-0 font-light">enterprise customers</h4>
+							<h2 className="text-2xl lg:text-4xl m-0"><GradientText className="mt-0 inline lg:w-1/4 font-medium">15+</GradientText></h2>
+							<p className="mt-0 font-bold">enterprise customers</p>
 						</div>
 					</div>
 				</Container>
@@ -86,7 +94,7 @@ export default function Index() {
 			<Section className="text-black bg-white relative" style={{ backgroundColor: '#A0E0FA' }}>
 				<Image src='/img/gradient.jpg' layout='fill' className="absolute inset-0" objectFit="cover" objectPosition="center" />
 				<Container className="text-center relative z-10">
-					<GradientText>Scalable Technologies For Enterprise</GradientText>
+					<h1><GradientText>Scalable Technologies For Enterprise</GradientText></h1>
 					<p>Obtain limitless potential. Built with our suite of open-source software tools and contributions from leading integration partners.</p>
 				</Container>
 				<Container variant="wide">
@@ -137,43 +145,55 @@ export default function Index() {
 
 			<div className="text-black bg-white relative overflow-hidden">
 				<Section className="relative my-6 lg:my-12 py-6 lg:py-12">
-					<div className="absolute rounded-full w-24 lg:w-48 aspect-square bg-[#B4419F] lg:top-1/4 right-[10%] blur-[256px]" />
+					<div className="absolute rounded-full w-24 lg:w-64 aspect-square bg-[#B4419F] lg:top-1/4 right-[30%] blur-[256px]" />
 					<div className="lg:absolute relative top-0 bottom-0 right-0 w-full lg:w-1/2 lg:aspect-auto aspect-video">
 						<Image src='/img/laptop.png' layout='fill' objectFit="contain" objectPosition="center right" />
 					</div>
 					<Container className="left relative z-10">
 						<div className="lg:w-1/2">
-							<GradientText>Easily create and manage</GradientText>
+							<h2 className="lg:text-3xl"><GradientText>Easily create and manage</GradientText></h2>
 							<p>Enterprise grade NFT backend enables you to easily create and manage all of your brands NFT assets. Create NFT drops at scale, manage utilization, distribute whitelist access, and bulk airdrop tokens. Simplified control and powerful utility with just a few Clicks.</p>
 						</div>
 					</Container>
 				</Section>
 
 				<Section className="relative my-6 lg:my-12 py-6 lg:py-12">
-					<div className="absolute rounded-full w-24 lg:w-48 aspect-square bg-[#B4419F] lg:top-1/4 left-[10%] blur-[256px]" />
+					<div className="absolute rounded-full w-24 lg:w-64 aspect-square bg-[#B4419F] lg:top-1/4 left-[10%] blur-[256px]" />
 					<div className="lg:absolute relative top-0 bottom-0 left-0 w-full lg:w-1/2 lg:aspect-auto aspect-video">
 						<Image src='/img/phone.png' layout='fill' objectFit="contain" objectPosition="center" />
 					</div>
 					<Container className="left relative z-10">
 						<div className="lg:w-1/2 lg:ml-auto">
-							<GradientText>Feature complete whitelabel marketplaces</GradientText>
+							<h2 className="lg:text-3xl"><GradientText>Feature complete whitelabel marketplaces</GradientText></h2>
 							<p>Powerful branded marketplaces to host secondary NFT sales. Over 40 brands utilize our whitelabel marketplace tools to aggregate listings across all marketplaces in one branded experience. With new integrations every month, from a community of integration partners, your marketplace will always have the latest and greatest that web3 has to offer.</p>
 						</div>
 					</Container>
 				</Section>
 			</div>
 
-			<Section className="bg-brandPurple text-white relative overflow-hidden">
+			<Section className="bg-brandPurple text-white relative overflow-hidden text-center">
 				<div className="absolute rounded-full w-24 h-24 bg-[#B4419F] top-1/4 right-1/4" />
 				<div className="absolute rounded-full w-24 h-24 bg-[#2E22AC] top-1/3 right-1/3" />
 				<div className="absolute rounded-full w-24 h-24 bg-[#B4419F] bottom-1/4 left-1/4" />
 				<div className="absolute rounded-full w-24 h-24 bg-[#2E22AC] bottom-1/3 left-1/3" />
 				<div className="absolute inset-0 z-10 backdrop-blur-3xl" />
 				<Container className="relative z-20">
-					<GradientText>Powerful APIs for web3 apps</GradientText>
+					<h2 className="lg:text-4xl"><GradientText className="gray">Powerful APIs for web3 apps</GradientText></h2>
+					<p className="opacity-60">API’s that power high performance applications built on top of decentralized blockchains. Provide a great user experience that increases engagement without having to get bogged down from slow blockchain speeds. A growing suite of APIs trusted by top Web3 protocols.</p>
 				</Container>
 				<Container className="relative z-20">
-					<GradientText>Powerful APIs for web3 apps</GradientText>
+					<h2 className="lg:text-4xl"><GradientText className="gray">Providing Rapid Innovation</GradientText></h2>
+					<p className="opacity-60">Open-source development provides strategic advantages by increasing velocity of product development, improved security and ultimate flexibility with no licensing fees. Web3 is a rapidly growing technology and building openly ensures the technology stack is never out of date. Holaplex is the open source Web3 contributor.</p>
+				</Container>
+			</Section>
+			<Section className="bg-white text-black relative overflow-hidden text-center">
+				<div className="absolute inset-0 z-10">
+
+				</div>
+				<Container className="relative z-20">
+					<h2 className="lg:text-4xl"><GradientText>Let's Work Together</GradientText></h2>
+					<p>We make it easy for anyone to buy, sell and engage with NFTs</p>
+					<Button>Contact Us</Button>
 				</Container>
 			</Section>
 

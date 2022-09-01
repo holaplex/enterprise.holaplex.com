@@ -1,7 +1,11 @@
 body {
 	background: black;
 	color: white;
-	font-family: "Inter", sans-serif;
+	font-family: "Poppins", sans-serif;
+}
+@font-face {
+	font-family: "Poppins";
+	src: url(/fonts/Poppins-Light.otf);
 }
 
 .frame-content {
