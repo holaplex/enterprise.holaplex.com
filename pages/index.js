@@ -124,7 +124,7 @@ export default function Index() {
 
 			<div className="text-black bg-white relative overflow-hidden">
 				<Section className="relative my-12 lg:my-24">
-					<div className="absolute rounded-full w-24 lg:w-48 aspect-square bg-[#B4419F] lg:top-1/4 right-[10%] blur-[128px]" />
+					<div className="absolute rounded-full w-24 lg:w-48 aspect-square bg-[#B4419F] lg:top-1/4 right-[10%] blur-[256px]" />
 					<div className="lg:absolute relative top-0 bottom-0 right-0 w-full lg:w-1/2 lg:aspect-auto aspect-video">
 						<Image src='/img/laptop.png' layout='fill' objectFit="contain" objectPosition="center right" />
 					</div>
@@ -137,7 +137,7 @@ export default function Index() {
 				</Section>
 
 				<Section className="relative my-12 lg:my-24">
-					<div className="absolute rounded-full w-24 lg:w-48 aspect-square bg-[#B4419F] lg:top-1/4 left-[10%] blur-[128px]" />
+					<div className="absolute rounded-full w-24 lg:w-48 aspect-square bg-[#B4419F] lg:top-1/4 left-[10%] blur-[256px]" />
 					<div className="lg:absolute relative top-0 bottom-0 left-0 w-full lg:w-1/2 lg:aspect-auto aspect-video">
 						<Image src='/img/phone.png' layout='fill' objectFit="contain" objectPosition="center" />
 					</div>
