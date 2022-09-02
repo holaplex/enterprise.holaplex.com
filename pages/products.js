@@ -72,7 +72,7 @@ export default function Index() {
 						<div className="lg:w-1/2">
 							<h2 className="lg:text-3xl lg:mt-12 mt-0"><GradientText>Branded Marketplaces</GradientText></h2>
 							<p>Powerful branded marketplaces to host secondary NFT sales. Over 40 brands utilize our Whitelabel marketplace tools to aggregate listings across all marketplaces in one branded experience. With new integrations every month, from a ommunity of integration partners, your marketplace will always have the latest and greatest that web3 has to offer</p>
-							<ul>
+							<ul className='list-disc mt-4 pl-4 leading-loose'>
 								<li>Aggregated listings</li>
 								<li>Make an offer, instant sale, and auctions</li>
 								<li>Multi token support</li>
@@ -93,6 +93,11 @@ export default function Index() {
 						<div className="lg:w-1/2 lg:ml-auto">
 							<h2 className="lg:text-3xl lg:mt-12 mt-0"><GradientText>API Tools</GradientText></h2>
 							<p>API’s that power high-performance applications built on top of decentralized blockchains. Provide a great user experience that increases engagement without having to get bogged down by slow blockchain speeds. A growing suite of APIs trusted by top Web3 protocols</p>
+							<ul className='list-disc mt-4 pl-4 leading-loose'>
+								<li>Cross Protocol Query Interface</li>
+								<li>High-Performance Indexing</li>
+								<li>Reliable Infrastructure</li>
+							</ul>
 						</div>
 					</Container>
 				</Section>
