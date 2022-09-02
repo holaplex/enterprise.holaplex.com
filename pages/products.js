@@ -8,9 +8,6 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 import Button from "../components/button";
 import { css } from "@emotion/react";
-import SubtleGlassTile from "../components/subtleGlassTile";
-import * as Icon from 'akar-icons';
-import SmartLink from "../components/smartlink";
 
 const gradientTextCSS = `
 -webkit-background-clip: text;
@@ -69,7 +66,7 @@ export default function Index() {
 				<Section className="relative my-6 lg:my-12 py-6 lg:py-12">
 					<div className="absolute rounded-full w-24 lg:w-64 aspect-square bg-[#B4419F] lg:top-1/4 right-[30%] blur-[256px]" />
 					<div className="lg:absolute relative top-0 bottom-0 right-0 w-full lg:w-1/2 lg:aspect-auto aspect-video">
-						<Image src='/img/laptop.png' layout='fill' objectFit="contain" objectPosition="center right" />
+						<Image src='/img/laptop.webp' layout='fill' objectFit="contain" objectPosition="center right" />
 					</div>
 					<Container className="left relative z-10">
 						<div className="lg:w-1/2">
@@ -90,7 +87,7 @@ export default function Index() {
 				<Section className="relative my-6 lg:my-12 py-6 lg:py-12">
 					<div className="absolute rounded-full w-24 lg:w-64 aspect-square bg-[#B4419F] lg:top-1/4 left-[10%] blur-[256px]" />
 					<div className="lg:absolute relative top-0 bottom-0 left-0 w-full lg:w-1/2 lg:aspect-auto aspect-video">
-						<Image src='/img/phone.png' layout='fill' objectFit="contain" objectPosition="center" />
+						<Image src='/img/phone.webp' layout='fill' objectFit="contain" objectPosition="center" />
 					</div>
 					<Container className="left relative z-10">
 						<div className="lg:w-1/2 lg:ml-auto">
