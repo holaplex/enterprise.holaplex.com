@@ -46,7 +46,7 @@ export default function Index() {
 
 				<Container className="flex flex-col lg:my-24 justify-center items-center relative z-50">
 					<p>Enterprise-grade NFT Solutions at Scale</p>
-					<h1 className="text-2xl lg:text-6xl">Maximize your brand’s potential in Web3</h1>
+					<h1 className="text-2xl lg:text-6xl mt-0">Maximize your brand’s potential in Web3</h1>
 					<div className="my-4 lg:my-8 flex flex-wrap justify-center gap-4">
 						<SubtleGlassTile className="w-48 justify-end">
 							<img width="32" height="32" src='/img/icons/external-link.svg' alt='' className="absolute top-0 right-0" />
@@ -55,13 +55,13 @@ export default function Index() {
 							</p>
 							<SmartLink href='https://devtools.holaplex.com/' className="absolute inset-0 z-50" />
 						</SubtleGlassTile>
-						<SubtleGlassTile className="w-48 justify-end">
+						{/*<SubtleGlassTile className="w-48 justify-end">
 							<img width="32" height="32" src='/img/icons/external-link.svg' alt='' className="absolute top-0 right-0" />
 							<p className="w-full text-left mb-0 mt-6 -mb-2 -ml-2">
 								Holaplex For Developers
 							</p>
 							<SmartLink href='https://devtools.holaplex.com/' className="absolute inset-0 z-50" />
-						</SubtleGlassTile>
+						</SubtleGlassTile>*/}
 					</div>
 				</Container>
 			</Section>

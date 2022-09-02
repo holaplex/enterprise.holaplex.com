@@ -48,17 +48,15 @@ export default function Index() {
 		<Layout>
 			<Metadata title={title} description={description} image='/img/screenshot.jpg' />
 
-			<Section className="text-white text-center relative -mt-24 pt-24 bg-[#030E37] overflow-hidden" css={css`
+			<Section className="text-white text-center relative -mt-24 pt-24 pb-12 bg-[#030E37] overflow-hidden" css={css`
 				background: linear-gradient(270deg, #030D31 6.74%, #030E3B 52.46%, #030C35 54.7%, #010C2C 64.64%, #010825 99.17%);
 			`}>
 				<div className="absolute rounded-full w-96 h-24 bg-[#6680F8] top-1/4 left-[10%] blur-[120px]" />
 				<div className="absolute rounded-full w-24 h-48 bg-[#B4419F] bottom-1/4 left-[10%] blur-[120px]" />
 				<div className="absolute rounded-full w-24 h-48 bg-[#B4419F] bottom-1/3 right-[10%] blur-[120px]" />
-
-
 				<Container className="flex flex-col lg:my-12 justify-center items-center relative z-50">
 					<p>Enterprise-grade NFT Solutions at Scale</p>
-					<h1 className="text-2xl lg:text-6xl">Products and services</h1>
+					<h1 className="text-2xl lg:text-6xl mt-0">Products and services</h1>
 				</Container>
 			</Section>
 

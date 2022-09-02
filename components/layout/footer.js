@@ -13,7 +13,7 @@ const Footer = () => {
 					<p>Copyright © {new Date().getFullYear()}</p>
 				</div>
 				<div className="w-1/4" />
-				<div>
+				{/*<div>
 					<p className="font-bold text-white">App Quick Links</p>
 					<ul>
 						<li><SmartLink href='/'>Smart Feed</SmartLink></li>
@@ -42,7 +42,7 @@ const Footer = () => {
 						<li><SmartLink href='/'>NFT Resources</SmartLink></li>
 						<li><SmartLink href='/'>NFT Meditations</SmartLink></li>
 					</ul>
-				</div>
+				</div>*/}
 			</nav>
 		</div>
 	);
