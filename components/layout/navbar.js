@@ -26,9 +26,9 @@ const Navbar = () => {
 					<NavItem href='/products'>
 						Products
 					</NavItem>
-					<NavItem href='/team'>
+					{/*<NavItem href='/team'>
 						Team
-					</NavItem>
+					</NavItem>*/}
 					<NavItem href='https://blog.holaplex.com'>
 						Blog
 					</NavItem>
