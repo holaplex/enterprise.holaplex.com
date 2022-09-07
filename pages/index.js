@@ -68,11 +68,11 @@ export default function Index() {
 
 			<Section className="text-black bg-white lg:py-16">
 				<Container className="text-center">
-					<div className="flex flex-wrap justify-around w-full mb-8">
+					{/*<div className="flex flex-wrap justify-around w-full mb-8">
 						<div className="w-12 lg:w-24 opacity-40"><Image alt='' src='/img/logos/axie-infinity.png' width={239} height={109} /></div>
 						<div className="w-12 lg:w-24"><Image alt='' src='/img/logos/campuslegends.png' width={457} height={128} /></div>
 						<div className="w-12 lg:w-24 opacity-40"><Image alt='' src='/img/logos/opensea.png' width={488} height={117} /></div>
-					</div>
+					</div>*/}
 					<p className="text-xl mb-4">"We are able to quickly and effectively build Solana NFTs drops for our launchpad program with Holaplex’s mint factory tools."</p>
 					<p className="font-bold text-xl text-gray-400">-Adam Montgomery<br />Head of Blockchain </p>
 				</Container>
