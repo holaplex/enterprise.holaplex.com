@@ -145,9 +145,9 @@ export default function Index() {
 							<p>Utility Management</p>
 						</SubtleGlassTile>
 					</div>
-					<div className="relative z-10 text-center">
+					{/*<div className="relative z-10 text-center">
 						<Button href="/products">View all products</Button>
-					</div>
+					</div>*/}
 				</Container>
 			</Section>
 
