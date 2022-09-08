@@ -85,7 +85,7 @@ export default function Index() {
 						<div className="hidden lg:block h-16 border-r" />
 						<div className="my-2">
 							<h2 className="text-2xl lg:text-4xl m-0"><GradientText className="mt-0 inline lg:w-1/4 font-medium">40+</GradientText></h2>
-							<p className="mt-0 font-bold">whitelabeled marketplaces</p>
+							<p className="mt-0 font-bold">billion data points available in seconds</p>
 						</div>
 						<div className="hidden lg:block h-16 border-r" />
 						<div className="my-2">
