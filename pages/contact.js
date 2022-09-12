@@ -49,7 +49,14 @@ export default function Index() {
 			<Metadata title={title} description={description} image='/img/screenshot.jpg' />
 
 			<Section className="text-white text-center relative -mt-24 pt-24 bg-[#030E37] overflow-hidden" css={css`
-				background: linear-gradient(270deg, #030D31 6.74%, #030E3B 52.46%, #030C35 54.7%, #010C2C 64.64%, #010825 99.17%);
+				background: linear-gradient(
+					270deg,
+					#030D31 6.74%,
+					#030E3B 52.46%,
+					#030C35 54.7%,
+					#010C2C 64.64%,
+					#010825 99.17%
+				);
 			`} />
 
 			<div className="text-black bg-white relative overflow-hidden">

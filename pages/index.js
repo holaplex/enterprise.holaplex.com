@@ -51,9 +51,9 @@ export default function Index() {
 						<SubtleGlassTile className="w-48 justify-end">
 							<img width="32" height="32" src='/img/icons/external-link.svg' alt='' className="absolute top-0 right-0" />
 							<p className="w-full text-left mb-0 mt-6 -mb-2 -ml-2">
-								Holaplex API
+								Get Started
 							</p>
-							<SmartLink href='https://devtools.holaplex.com/' className="absolute inset-0 z-50" />
+							<SmartLink href='/contact' className="absolute inset-0 z-50" />
 						</SubtleGlassTile>
 						{/*<SubtleGlassTile className="w-48 justify-end">
 							<img width="32" height="32" src='/img/icons/external-link.svg' alt='' className="absolute top-0 right-0" />
@@ -66,7 +66,7 @@ export default function Index() {
 				</Container>
 			</Section>
 
-			<Section className="text-black bg-white lg:py-16">
+			<Section className="text-black bg-white">
 				<Container className="text-center">
 					<div className="flex flex-wrap justify-around w-full mb-8">
 						<div className="w-12 lg:w-24"><Image alt='' src='/img/logos/opensea.png' width={488} height={117} /></div>
