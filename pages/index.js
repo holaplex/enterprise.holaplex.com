@@ -45,7 +45,7 @@ export default function Index() {
 
 
 				<Container className="flex flex-col lg:my-24 justify-center items-center relative z-50">
-					<p>Enterprise-grade NFT Solutions at Scale</p>
+					<p className="mb-4">Enterprise-grade NFT Solutions at Scale</p>
 					<h1 className="text-2xl lg:text-6xl mt-0">Maximize your brand’s potential in Web3</h1>
 					<div className="my-4 lg:my-8 flex flex-wrap justify-center gap-4">
 						<SubtleGlassTile className="w-48 justify-end">
