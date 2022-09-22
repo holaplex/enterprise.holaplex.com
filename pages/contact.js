@@ -68,9 +68,7 @@ export default function Index() {
 							<p>Connect with our team of experts to get a comprehensive and customized walkthrough of our enterprise-grade solutions and services. Discover how Holaplex is partnering with leading brands to maximize shareholder value.</p>
 						</div>
 						<div className="lg:w-1/2 lg:p-4 lg:bg-white lg:shadow-2xl lg:rounded-xl">
-							<h2 className="lg:text-3xl mt-0 text-[#3B5ACC]">Fill up this short form to enter the world of Web3</h2>
-							<p>Connect with our team of experts to get a comprehensive and customized.</p>
-							<iframe src="/contact-form.html" className="w-full aspect-square"></iframe>
+							<iframe src="/contact-form.html" className="w-full" style={{ aspectRatio: '1/1.25' }}></iframe>
 						</div>
 					</Container>
 				</Section>
