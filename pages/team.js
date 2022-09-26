@@ -6,11 +6,13 @@ import Image from "next/image";
 import Button from "../components/button";
 
 function TeamMember(props) {
-	const { name, role, color } = props;
+	const { name, role, color, image } = props;
 	return <div className="w-48 border border-[#fafafa] lg:min-w-[20rem] p-2 shadow-xl rounded-xl">
-		<div className="rounded-xl aspect-square w-full" style={{
+		<div className="rounded-xl aspect-square w-full relative" style={{
 			background: color || '#000',
-		}} />
+		}}>
+			<Image src={image} layout="fill" objectFit="contain" objectPosition='bottom center' />
+		</div>
 		<h2>{name}</h2>
 		<p>{role}</p>
 	</div>
@@ -36,14 +38,14 @@ export default function Index() {
 						</p>
 					</div>
 					<div className="flex flex-col lg:flex-row w-full max-w-4xl relative overflow-hidden lg:py-8 rounded-xl justify-start items-center lg:items-stretch gap-4">
-						<div className="absolute top-0 right-0 bottom-0 w-48 hidden lg:block" style={{
+						<div className="absolute top-0 right-0 bottom-0 w-48 z-10 hidden lg:block" style={{
 							background: 'linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1))',
 						}} />
 						&nbsp;
 
-						<TeamMember name="Alex Kehaya" role="CEO" color="#6CCDD6" />
-						<TeamMember name="Anja Bedford" role="COO" color="#A4E8DB" />
-						<TeamMember name="Matthew Stotts" role="CSO" color="#C7F5F9" />
+						<TeamMember name="Alex Kehaya" role="CEO" image="/img/team/Alex Kehaya.png" color="#6CCDD6" />
+						<TeamMember name="Anja Bedford" role="COO" image="/img/team/Anja Bedford.png" color="#A4E8DB" />
+						<TeamMember name="Matthew Stotts" role="CSO" image="/img/team/Matthew Stotts.png" color="#C7F5F9" />
 					</div>
 				</div>
 			</Section>
