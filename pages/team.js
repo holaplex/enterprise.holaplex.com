@@ -1,5 +1,3 @@
-import { attributes } from "../content/pages/home.md";
-
 import Layout from "../components/layout";
 import Section from "../components/section";
 import Metadata from "../components/metadata";
@@ -19,11 +17,14 @@ function TeamMember(props) {
 }
 
 export default function Index() {
-	const { title, description } = attributes;
 
 	return (
 		<Layout>
-			<Metadata title={title} description={description} image='/img/screenshot.jpg' />
+			<Metadata
+				title="Team - Holaplex"
+				description="Holaplex is a leader in open-source web3 technologies. We bring our years of experience building in the crypto / web3 ecosystem and delivering success at top global brands."
+				image='/img/screenshot.jpg'
+			/>
 
 			<Section className="text-black relative py-12 bg-white overflow-hidden">
 				<div className="absolute rounded-full w-24 h-48 bg-[#B4419F] top-[-5%] left-[-10%] blur-[120px]" />
