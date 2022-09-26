@@ -31,7 +31,7 @@ export default function Index() {
 			<Section className="text-black relative py-12 bg-white overflow-hidden">
 				<div className="absolute rounded-full w-24 h-48 bg-[#B4419F] top-[-5%] left-[-10%] blur-[120px]" />
 				<div className="flex flex-col lg:flex-row lg:my-12 my-6 justify-center items-center lg:items-center relative z-50">
-					<div className="lg:w-1/2 w-full lg:px-8 max-w-xl">
+					<div className="lg:w-1/2 w-full px-8 max-w-xl">
 						<h1 className="text-2xl lg:text-6xl mt-0">Your Web3 Partner with Enterprise Experience</h1>
 						<p>
 							Holaplex is a leader in open-source web3 technologies. We bring our years of experience building in the crypto / web3 ecosystem and delivering success at top global brands. For brands, web3 represents a massive opportunity where exponential growth is possible, yet there exist unique challenges that must be considered. When you work with Holaplex you get a partner.
