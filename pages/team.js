@@ -25,7 +25,7 @@ export default function Index() {
 		<Layout>
 			<Metadata title={title} description={description} image='/img/screenshot.jpg' />
 
-			<Section className="text-black relative pt-24 pb-12 bg-white overflow-hidden">
+			<Section className="text-black relative py-12 bg-white overflow-hidden">
 				<div className="absolute rounded-full w-24 h-48 bg-[#B4419F] top-[-5%] left-[-10%] blur-[120px]" />
 				<div className="flex flex-col lg:flex-row lg:my-12 my-6 justify-center items-center lg:items-center relative z-50">
 					<div className="lg:w-1/2 w-full lg:px-8 max-w-xl">
