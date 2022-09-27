@@ -7,11 +7,11 @@ import Button from "../components/button";
 
 function TeamMember(props) {
 	const { name, role, color, image } = props;
-	return <div className="w-48 border border-[#fafafa] lg:min-w-[20rem] p-2 shadow-xl rounded-xl">
-		<div className="rounded-xl aspect-square w-full relative" style={{
+	return <div className="w-11/12 lg:w-1/3 border border-[#fafafa] p-2 shadow-xl rounded-xl">
+		<div className="rounded-xl aspect-[1/1.1] w-full relative overflow-hidden" style={{
 			background: color || '#000',
 		}}>
-			<Image src={image} layout="fill" objectFit="contain" objectPosition='bottom center' />
+			<Image src={image} layout="fill" objectFit="contain" objectPosition='bottom' />
 		</div>
 		<h2>{name}</h2>
 		<p>{role}</p>
@@ -32,17 +32,17 @@ export default function Index() {
 				<div className="absolute rounded-full w-24 h-48 bg-[#B4419F] top-[-5%] left-[-10%] blur-[120px]" />
 				<div className="flex flex-col lg:flex-row lg:my-12 my-6 justify-center items-center lg:items-center relative z-50">
 					<div className="lg:w-1/2 w-full px-8 max-w-xl">
-						<h1 className="text-2xl lg:text-6xl mt-0">Your Web3 Partner with Enterprise Experience</h1>
+						<h1 className="text-2xl lg:text-6xl mt-0">
+							Your Web3 Partner with Enterprise Experience
+						</h1>
 						<p>
 							Holaplex is a leader in open-source web3 technologies. We bring our years of experience building in the crypto / web3 ecosystem and delivering success at top global brands. For brands, web3 represents a massive opportunity where exponential growth is possible, yet there exist unique challenges that must be considered. When you work with Holaplex you get a partner.
 						</p>
 					</div>
-					<div className="flex flex-col lg:flex-row w-full max-w-4xl relative overflow-hidden lg:py-8 rounded-xl justify-start items-center lg:items-stretch gap-4">
-						<div className="absolute top-0 right-0 bottom-0 w-48 z-10 hidden lg:block" style={{
+					<div className="flex flex-col lg:flex-row w-full max-w-4xl relative overflow-hidden lg:p-8 rounded-xl justify-start items-center lg:items-stretch gap-4">
+						{/*<div className="absolute top-0 right-0 bottom-0 w-48 z-10 hidden lg:block" style={{
 							background: 'linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1))',
-						}} />
-						&nbsp;
-
+						}} />*/}
 						<TeamMember name="Alex Kehaya" role="CEO" image="/img/team/Alex Kehaya.png" color="#6CCDD6" />
 						<TeamMember name="Anja Bedford" role="COO" image="/img/team/Anja Bedford.png" color="#A4E8DB" />
 						<TeamMember name="Matthew Stotts" role="CSO" image="/img/team/Matthew Stotts.png" color="#C7F5F9" />
