@@ -15,26 +15,39 @@ body {
 */
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
 	margin: 1.5em 0 0.5em;
 	font-family: "Ratofy", sans-serif;
 }
 
+h4,
+h5,
+h6 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+}
+
 h1 {
-	@apply text-3xl;
+	@apply text-xl;
+	@media (min-width: 1024px) {
+		@apply text-3xl;
+	}
 	font-weight: 400;
 }
 
 h2 {
-	@apply text-2xl;
+	@apply text-lg;
+	@media (min-width: 1024px) {
+		@apply text-2xl;
+	}
 	font-weight: 400;
 }
 
 h3 {
-	@apply text-xl;
+	@apply text-lg;
+	@media (min-width: 1024px) {
+		@apply text-xl;
+	}
 }
 
 h4,

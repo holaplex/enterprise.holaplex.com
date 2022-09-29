@@ -39,6 +39,16 @@ module.exports = {
 					100: "#F597D4",
 				},
 			},
+			fontSize: {
+				'sm': '20px',
+				'base': '25px',
+				'lg': ['36px', '35px'],
+				'xl': ['60px', '60px'],
+				'2xl': ['70px', '64px'],
+				'3xl': ['90px', '82px'],
+				'4xl': '140px',
+				'5xl': '150px',
+			}
 		},
 	},
 	plugins: [],

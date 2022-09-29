@@ -1,8 +1,8 @@
 import Layout from "../components/layout";
 import Section from "../components/section";
 import Metadata from "../components/metadata";
-import Container from "../components/container";
 import Image from "next/image";
+import Container from "../components/container";
 import Button from "../components/button";
 
 function TeamMember(props) {

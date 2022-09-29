@@ -64,7 +64,7 @@ export default function Index() {
 					<div className="absolute rounded-full w-24 lg:w-64 aspect-square bg-[#B4419F] top-0 left-0 blur-[256px]" />
 					<Container className="left relative z-10 flex flex-wrap">
 						<div className="lg:w-1/2 lg:p-4">
-							<h2 className="lg:text-3xl mt-0"><GradientText>Discover what Holaplex can do to help maximize your web3 strategy.</GradientText></h2>
+							<h4 className="mt-0 mb-4"><GradientText>Discover what Holaplex can do to help maximize your web3 strategy.</GradientText></h4>
 							<p>Connect with our team of experts to get a comprehensive and customized walkthrough of our enterprise-grade solutions and services. Discover how Holaplex is partnering with leading brands to maximize shareholder value.</p>
 						</div>
 						<div className="lg:w-1/2 lg:p-4 lg:bg-white lg:shadow-2xl lg:rounded-xl">
