@@ -23,12 +23,12 @@ const Navbar = () => {
 					<NavItem href='/'>
 						Home
 					</NavItem>
-					{/*<NavItem href='/products'>
+					<NavItem href='/products'>
 						Products
 					</NavItem>
 					<NavItem href='/team'>
 						Team
-					</NavItem>*/}
+					</NavItem>
 					<NavItem href='https://blog.holaplex.com'>
 						Blog
 					</NavItem>

@@ -138,6 +138,7 @@ export default function Index() {
 							<p className="subtitle text-highlight">NFT Command Center</p>
 							<h3 className="lg:mt-2 mt-0"><GradientText>Easily Create And Manage NFTs</GradientText></h3>
 							<p>Enterprise grade NFT backend enables you to easily create and manage all of your brands NFT assets. Create NFT drops at scale, manage utilization, distribute whitelist access, and bulk airdrop tokens. Simplified control and powerful utility with just a few clicks.</p>
+							<Button href='/product/command-center'>Learn More</Button>
 						</div>
 					</Container>
 				</Section>
@@ -152,6 +153,7 @@ export default function Index() {
 							<p className="subtitle text-highlight">Custom Marketplaces</p>
 							<h3 className="lg:mt-2 mt-0"><GradientText>FEATURE COMPLETE MARKETPLACES</GradientText></h3>
 							<p>Quickly launch a whitelabel NFT marketplace or build a bespoke experience with our fully customized solution. With new integrations every month, from a community of integration partners, your marketplace will always have the latest and greatest that web3 has to offer.</p>
+							<Button href='/product/marketplace'>Learn More</Button>
 						</div>
 					</Container>
 				</Section>
