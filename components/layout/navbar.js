@@ -32,7 +32,7 @@ const Navbar = () => {
 							<Image src="/img/enterprise.svg" width={1509} height={143} alt="" />
 						</SmartLink>
 					</div>
-					<ul id="navItems" className="hidden md:flex gap-10">
+					<ul className="hidden md:flex gap-10">
 						<NavItem href='/'>
 							Home
 						</NavItem>
@@ -53,9 +53,10 @@ const Navbar = () => {
 							Blog
 						</NavItem>
 					</ul>
-					<ul id="navItems" className="hidden md:block">
+					<ul className="hidden md:block">
 						<NavItem href='/contact'>
 							Contact Us
+							<div className="absolute -top-[20%] -left-[20%] w-[140%] h-[140%] border border-gray-600 rounded" />
 						</NavItem>
 					</ul>
 					<div className="block md:hidden" onClick={e => {
