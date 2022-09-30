@@ -27,12 +27,12 @@ export default function Index() {
 
 				<Section className="-mt-24 lg:-mt-96 hidden lg:block">
 					<div className='w-7/12 max-w-3xl mx-auto drop-shadow-lg'>
-						<Image src='/uploads/command-center-1.jpg' className="w-full" width={2220 / 2} height={1417 / 2} priority className="rounded-xl" />
+						<Image src='/uploads/command-center-1.jpg' className="w-full rounded-xl" width={2220} height={1417} priority />
 						<div className="absolute top-1/4 -left-1/4 w-1/3 drop-shadow-lg">
-							<Image src='/uploads/command-center-2.jpg' width={510 / 2} height={498 / 2} priority className="rounded-xl" />
+							<Image src='/uploads/command-center-2.jpg' width={510} height={498} priority className="rounded-xl" />
 						</div>
 						<div className="absolute top-8 -right-1/4 w-1/3 drop-shadow-lg">
-							<Image src='/uploads/command-center-3.jpg' width={700 / 2} height={686 / 2} priority className="rounded-xl" />
+							<Image src='/uploads/command-center-3.jpg' width={700} height={686} priority className="rounded-xl" />
 						</div>
 					</div>
 				</Section>
