@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import SmartLink from "../smartlink";
+import * as Icon from 'akar-icons';
 
 const NavItem = ({ children, href }) => {
 	return (
@@ -44,7 +45,7 @@ const Navbar = () => {
 						e.preventDefault();
 						setActive(!active);
 					}}>
-						Menu
+						<Icon.ThreeLineHorizontal />
 					</div>
 				</nav>
 			</div>
@@ -59,7 +60,7 @@ const Navbar = () => {
 						e.preventDefault();
 						setActive(false);
 					}}>
-						❌ Close
+						<Icon.Cross /> Close
 					</div>
 					<NavItem href='/'>
 						Home
