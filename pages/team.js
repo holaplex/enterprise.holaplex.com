@@ -13,7 +13,7 @@ function TeamMember(props) {
 		}}>
 			<Image src={image} layout="fill" objectFit="contain" objectPosition='bottom' />
 		</div>
-		<h2>{name}</h2>
+		<h4>{name}</h4>
 		<p>{role}</p>
 	</div>
 }
