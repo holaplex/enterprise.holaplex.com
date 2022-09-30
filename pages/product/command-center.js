@@ -20,7 +20,7 @@ export default function Index() {
 			<div className="bg-white">
 				<Metadata title={'Command Center'} description={''} image='/img/screenshot.jpg' />
 
-				<SectionHero slanted="h-24 lg:h-48" slantedColor="#ffffff">
+				<SectionHero slanted="h-24 lg:h-48 hidden lg:block" slantedColor="#ffffff">
 					<h1 className="mt-0">Minting and NFT management made simple</h1>
 					<p>Create thousands of NFTs, manage utilities, and get detailed reporting all in one place.</p>
 				</SectionHero>
@@ -37,7 +37,7 @@ export default function Index() {
 					</div>
 				</Section>
 
-				<Section className="bg-brandPurple text-white lg:text-center lg:mt-10 lg:py-4">
+				<Section className="bg-brandPurple text-white lg:text-center lg:mt-10 py-4">
 					<Container variant='small'>
 						<h4>Holaplex <span className="font-thin">Marketplaces</span></h4>
 						<h3><GradientText className="silver-transparent inline-block">Get the best that web3 has to offer</GradientText></h3>
@@ -46,7 +46,7 @@ export default function Index() {
 				</Section>
 
 				<ProductSection image='/uploads/create-drop-mock-1.jpg'>
-					<div className='subtitle'>Drops Center</div>
+					<div className='subtitle text-highlight'>Drops Center</div>
 					<h3><GradientText>Create NFTs At Scale</GradientText></h3>
 					<p>
 						Need to mint tens, hundreds, thousands, or maybe millions of NFTs? No problem! Minting with Holaplex saves you time and money by simplifying the minting process. We handle the technology so you can focus on selling.
@@ -54,15 +54,15 @@ export default function Index() {
 				</ProductSection>
 
 				<ProductSection image='/uploads/marketplace home page (customer facing) 2.jpg' flipped>
-					<div className='subtitle'>Update NFTs</div>
+					<div className='subtitle text-highlight'>Update NFTs</div>
 					<h3><GradientText>Edit and Manage Your NFTs</GradientText></h3>
 					<p>
 						Control your created NFTs to drive powerful utilities. With a central user interface, you can grant NFT holders access to gated content, enable redeemable rewards, or edit metadata.
 					</p>
 				</ProductSection>
 
-				<ProductSection image='/uploads/Group 1000000828.jpg'>
-					<div className='subtitle'>Bulk Sending</div>
+				<ProductSection noWindow image='/uploads/Group 1000000828.jpg'>
+					<div className='subtitle text-highlight'>Bulk Sending</div>
 					<h3><GradientText>Send NFTs to Your Customers</GradientText></h3>
 					<p>
 						Create compelling campaigns that drive engagement by sending NFTs to specific groups of users. With just a few clicks you can you can create exciting experiences and that increase action.
@@ -70,7 +70,7 @@ export default function Index() {
 				</ProductSection>
 
 				<ProductSection image='/uploads/marketplace home page (customer facing).jpg' flipped>
-					<div className='subtitle'>Powerful Reporting</div>
+					<div className='subtitle text-highlight'>Powerful Reporting</div>
 					<h3><GradientText>Insights You Need To Drive Your Business</GradientText></h3>
 					<p>
 						Actionable insights at your fingertips. No blockchain wizardry needed, just clear, visual, and intuitive dashboards to stay on track and so you can reach your goals. Access decoded blockchain data that is easy to understand.

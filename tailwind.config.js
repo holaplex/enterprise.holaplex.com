@@ -38,6 +38,9 @@ module.exports = {
 					DEFAULT: "#cd3f45",
 					100: "#F597D4",
 				},
+				highlight: {
+					DEFAULT: '#528AD5',
+				}
 			},
 			fontSize: {
 				'sm': '20px',

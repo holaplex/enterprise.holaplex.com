@@ -20,7 +20,7 @@ export default function Index() {
 			<div className="bg-white">
 				<Metadata title={'Command Center'} description={''} image='/img/screenshot.jpg' />
 
-				<SectionHero slanted="h-24 lg:h-48" slantedColor="#ffffff">
+				<SectionHero slanted="h-24 lg:h-48 hidden lg:block" slantedColor="#ffffff">
 					<h1 className="mt-0">Launch your brand's, custom NFT Marketplace</h1>
 					<p>Leverage the power of Web3 by giving your customers an industry-leading user experience with Holaplex’s whitelabel marketplace.</p>
 				</SectionHero>
@@ -37,7 +37,7 @@ export default function Index() {
 					</div>
 				</Section>
 
-				<Section className="bg-gray-50 text-black lg:text-center lg:mt-10 lg:py-4">
+				<Section className="bg-gray-50 text-black lg:text-center lg:mt-10 py-4">
 					<Container variant='small'>
 						<h4>Holaplex <span className="font-thin">Marketplaces</span></h4>
 						<h3><GradientText>Get the best that web3 has to offer</GradientText></h3>
@@ -46,7 +46,7 @@ export default function Index() {
 				</Section>
 
 				<ProductSection image='/uploads/marketplace-sell.jpg' flipped>
-					<div className='subtitle'>NFT Drops</div>
+					<div className='subtitle text-highlight'>NFT Drops</div>
 					<h3><GradientText>Sell NFTs at scale</GradientText></h3>
 					<p>
 						Drive primary sales with your optimized NFT commerce site. Zero NFT knowledge is required for customers to buy, sell and own NFTs. We make it easy to create world-class web3 experiences.
@@ -54,7 +54,7 @@ export default function Index() {
 				</ProductSection>
 
 				<ProductSection image='/uploads/marketplace-hub.jpg'>
-					<div className='subtitle'>Marketplace</div>
+					<div className='subtitle text-highlight'>Marketplace</div>
 					<h3><GradientText>The NFT trading hub for your brand</GradientText></h3>
 					<p>
 						Capture your maximum potential with a secondary marketplace. Own your customer's journey through the entire NFT experience, support customer-to-customer interactions, and unlock opportunities to capture additional revenue.
@@ -62,7 +62,7 @@ export default function Index() {
 				</ProductSection>
 
 				<ProductSection image='/uploads/marketplace-onboard.jpg' flipped>
-					<div className='subtitle'>User Management</div>
+					<div className='subtitle text-highlight'>User Management</div>
 					<h3><GradientText>Easily onboard your customers into web3</GradientText></h3>
 					<p>
 						Offer safe, reliable, and low-friction wallet management for your users. Allow your customers to use their existing wallets or manage their wallet for them while they maintain control over their assets. Stay compliant and deliver an easy onboarding experience.
