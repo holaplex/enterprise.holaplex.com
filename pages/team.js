@@ -2,8 +2,6 @@ import Layout from "../components/layout";
 import Section from "../components/section";
 import Metadata from "../components/metadata";
 import Image from "next/image";
-import Container from "../components/container";
-import Button from "../components/button";
 import GradientText from '../components/gradientText';
 
 function TeamMember(props) {
