@@ -20,14 +20,14 @@ export default function Index() {
 			<div className="bg-white">
 				<Metadata title={'Command Center'} description={''} image='/img/screenshot.jpg' />
 
-				<SectionHero slanted="h-24 lg:h-48 hidden lg:block" slantedColor="#ffffff">
+				<SectionHero slanted="h-24 lg:h-96 hidden lg:block" slantedColor="#ffffff">
 					<h1 className="mt-0">Minting and NFT management made simple</h1>
 					<p>Create thousands of NFTs, manage utilities, and get detailed reporting all in one place.</p>
 				</SectionHero>
 
-				<Section className="-mt-24 lg:-mt-48 hidden lg:block">
-					<div className='w-full max-w-lg mx-auto drop-shadow-lg'>
-						<Image src='/uploads/command-center-1.png' width={2220 / 2} height={1417 / 2} priority />
+				<Section className="-mt-24 lg:-mt-96 hidden lg:block">
+					<div className='w-7/12 max-w-3xl mx-auto drop-shadow-lg'>
+						<Image src='/uploads/command-center-1.png' className="w-full" width={2220 / 2} height={1417 / 2} priority />
 						<div className="absolute top-1/4 -left-1/4 w-1/3 drop-shadow-lg">
 							<Image src='/uploads/command-center-2.png' width={510 / 2} height={498 / 2} priority />
 						</div>

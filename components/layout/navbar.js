@@ -14,9 +14,9 @@ const NavItem = ({ children, href, dropdown }) => {
 			setHover(false);
 		}}>
 			<SmartLink href={href}>{children}{dropdown ? <Icon.ChevronDown className="inline-block w-4 ml-1" /> : <></>}</SmartLink>
-			{dropdown ? <div className={'absolute top-[100%] w-[300%] left-[-100%] text-center p-2 bg-gray-600 shadow-xl flex flex-col gap-2 rounded ' + (hover ? "block" : "hidden")}>
+			{dropdown ? <ul className={'absolute top-[100%] w-[300%] left-[-100%] text-center p-2 bg-gray-600 shadow-xl flex flex-col gap-2 rounded ' + (hover ? "block" : "hidden")}>
 				{dropdown}
-			</div> : <></>}
+			</ul> : <></>}
 		</li>
 	);
 };

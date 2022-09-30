@@ -20,13 +20,13 @@ export default function Index() {
 			<div className="bg-white">
 				<Metadata title={'Command Center'} description={''} image='/img/screenshot.jpg' />
 
-				<SectionHero slanted="h-24 lg:h-48 hidden lg:block" slantedColor="#ffffff">
+				<SectionHero slanted="h-24 lg:h-96 hidden lg:block" slantedColor="#ffffff">
 					<h1 className="mt-0">Launch your brand's, custom NFT Marketplace</h1>
 					<p>Leverage the power of Web3 by giving your customers an industry-leading user experience with Holaplex’s whitelabel marketplace.</p>
 				</SectionHero>
 
-				<Section className="-mt-24 lg:-mt-48 hidden lg:block">
-					<div className='w-full max-w-lg mx-auto drop-shadow-lg'>
+				<Section className="-mt-24 lg:-mt-96 hidden lg:block">
+					<div className='w-7/12 max-w-3xl mx-auto drop-shadow-lg'>
 						<Image src='/uploads/marketplace-1.png' width={2248 / 2} height={1451 / 2} priority />
 						<div className="absolute top-1/4 -left-1/4 w-1/3 drop-shadow-lg">
 							<Image src='/uploads/marketplace-3.png' width={453 / 2} height={410 / 2} priority />
