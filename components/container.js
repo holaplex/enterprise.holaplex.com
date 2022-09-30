@@ -26,6 +26,9 @@ const Container = ({ children, className, variant }) => {
 		case "slim":
 			width = "max-w-xl";
 			break;
+		case "small":
+			width = "max-w-2xl";
+			break;
 		case "wide":
 			width = "max-w-6xl";
 			break;

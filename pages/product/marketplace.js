@@ -37,6 +37,14 @@ export default function Index() {
 					</div>
 				</Section>
 
+				<Section className="bg-gray-50 text-black lg:text-center lg:mt-10 lg:py-4">
+					<Container variant='small'>
+						<h4>Holaplex <span className="font-thin">Marketplaces</span></h4>
+						<h3><GradientText>Get the best that web3 has to offer</GradientText></h3>
+						<p>Feature-complete marketplaces with advanced features from top protocol integration</p>
+					</Container>
+				</Section>
+
 				<ProductSection image='/uploads/marketplace-sell.jpg' flipped>
 					<div className='subtitle'>NFT Drops</div>
 					<h3><GradientText>Sell NFTs at scale</GradientText></h3>
