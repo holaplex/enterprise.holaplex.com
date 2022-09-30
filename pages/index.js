@@ -29,8 +29,8 @@ export default function Index() {
 
 
 				<Container className="flex flex-col lg:my-24 justify-center items-center relative z-50">
-					<p className="mb-4">Enterprise-grade NFT Solutions at Scale</p>
-					<h2 className="mt-0">Maximize your brand’s potential in Web3</h2>
+					<p className="mb-4">Enterprise-grade NFT Solutions</p>
+					<h2 className="mt-0"> Maximize your brand’s potential in Web3</h2>
 					<div className="my-4 lg:my-8 flex flex-wrap justify-center gap-4">
 						<SubtleGlassTile className="w-48 justify-end">
 							<img width="32" height="32" src='/img/icons/external-link.svg' alt='' className="absolute top-0 right-0" />
@@ -39,13 +39,6 @@ export default function Index() {
 							</p>
 							<SmartLink href='/contact' className="absolute inset-0 z-50" />
 						</SubtleGlassTile>
-						{/*<SubtleGlassTile className="w-48 justify-end">
-							<img width="32" height="32" src='/img/icons/external-link.svg' alt='' className="absolute top-0 right-0" />
-							<p className="w-full text-left mb-0 mt-6 -mb-2 -ml-2">
-								Holaplex For Developers
-							</p>
-							<SmartLink href='https://devtools.holaplex.com/' className="absolute inset-0 z-50" />
-						</SubtleGlassTile>*/}
 					</div>
 				</Container>
 			</Section>
@@ -55,7 +48,7 @@ export default function Index() {
 					<div className="flex flex-wrap justify-around w-full mb-8">
 						<div className="w-12 lg:w-24"><Image alt='' src='/img/logos/opensea.png' width={488} height={117} /></div>
 					</div>
-					<p className="mb-4">"We are able to quickly and effectively build Solana NFTs drops for our launchpad program with Holaplex’s mint factory tools."</p>
+					<p className="mb-4">"We are able to quickly and effectively build Solana NFTs drops for our launchpad program with Holaplex’s minting tools."</p>
 					<h4 className="font-bold text-gray-400 text-center">
 						-Adam Montgomery
 						<br />
@@ -66,17 +59,17 @@ export default function Index() {
 					<div className="flex flex-wrap justify-around items-center text-center lg:text-left">
 						<div className="my-2">
 							<h2 className="m-0"><GradientText className="mt-0 inline lg:w-1/4 font-medium">10,000</GradientText></h2>
-							<p className="mt-0 font-bold">creators use our tools</p>
+							<p className="mt-0 font-bold">CREATORS USE OUR TOOLS</p>
 						</div>
 						<div className="hidden lg:block h-16 border-r" />
 						<div className="my-2">
 							<h2 className="m-0"><GradientText className="mt-0 inline lg:w-1/4 font-medium">40+</GradientText></h2>
-							<p className="mt-0 font-bold">billion data points available in seconds</p>
+							<p className="mt-0 font-bold">Billions of data points accessible in milliseconds</p>
 						</div>
 						<div className="hidden lg:block h-16 border-r" />
 						<div className="my-2">
 							<h2 className="m-0"><GradientText className="mt-0 inline lg:w-1/4 font-medium">15+</GradientText></h2>
-							<p className="mt-0 font-bold">enterprise customers</p>
+							<p className="mt-0 font-bold">Protocols Indexed</p>
 						</div>
 					</div>
 				</Container>
@@ -86,7 +79,7 @@ export default function Index() {
 				<Image src='/img/gradient.jpg' layout='fill' className="absolute inset-0" objectFit="cover" objectPosition="center" />
 				<Container className="text-center relative z-10">
 					<h3><GradientText>Scalable Technologies For Enterprise</GradientText></h3>
-					<p>Obtain limitless potential. Built with our suite of open-source software tools and contributions from leading integration partners.</p>
+					<p>Onboard to web3 with ease. Built with our suite of open-source software tools and contributions from leading integration partners.</p>
 				</Container>
 				<Container variant="wide">
 					<div className="gap-4 flex flex-wrap justify-center">
@@ -131,9 +124,6 @@ export default function Index() {
 							<p>Utility Management</p>
 						</SubtleGlassTile>
 					</div>
-					{/*<div className="relative z-10 text-center">
-						<Button href="/products">View all products</Button>
-					</div>*/}
 				</Container>
 			</Section>
 
@@ -145,7 +135,8 @@ export default function Index() {
 					</div>
 					<Container className="left relative z-10">
 						<div className="lg:w-1/2">
-							<h3 className="lg:mt-12 mt-0"><GradientText>Easily Create And Manage NFTs</GradientText></h3>
+							<p className="subtitle text-highlight">NFT Command Center</p>
+							<h3 className="lg:mt-2 mt-0"><GradientText>Easily Create And Manage NFTs</GradientText></h3>
 							<p>Enterprise grade NFT backend enables you to easily create and manage all of your brands NFT assets. Create NFT drops at scale, manage utilization, distribute whitelist access, and bulk airdrop tokens. Simplified control and powerful utility with just a few clicks.</p>
 						</div>
 					</Container>
@@ -158,7 +149,8 @@ export default function Index() {
 					</div>
 					<Container className="left relative z-10">
 						<div className="lg:w-1/2 lg:ml-auto">
-							<h3 className="lg:mt-12 mt-0"><GradientText>Feature complete whitelabel marketplaces</GradientText></h3>
+							<p className="subtitle text-highlight">Custom Marketplaces</p>
+							<h3 className="lg:mt-2 mt-0"><GradientText>FEATURE COMPLETE MARKETPLACES</GradientText></h3>
 							<p>Quickly launch a whitelabel NFT marketplace or build a bespoke experience with our fully customized solution. With new integrations every month, from a community of integration partners, your marketplace will always have the latest and greatest that web3 has to offer.</p>
 						</div>
 					</Container>
@@ -180,7 +172,7 @@ export default function Index() {
 				<div className="absolute inset-0 z-10 backdrop-blur-3xl" />
 				<Container className="relative z-50">
 					<div className="bg-[#140F35] w-full p-2 lg:p-8 border rounded-lg" style={{ borderColor: 'rgba(255,255,255,0.45)' }}>
-						<h2 className=" mt-0"><GradientText className="gray">Powerful APIs for web3 apps</GradientText></h2>
+						<h2 className=" mt-0"><GradientText className="gray">POWERFUL APIS FOR WEB3 APPS</GradientText></h2>
 						<p className="opacity-60">We make your web3 applications run at hyperspeeds. Reading data directly from the blockchain can cause long load times. With our indexer API, we deliver low latency read performance even when TPS is low.</p>
 						<div className="my-8 hidden lg:block">
 							<Image src='/img/cool-chart-2.svg' alt='' width={1128} height={150} />
@@ -190,7 +182,7 @@ export default function Index() {
 				</Container>
 				<Container className="relative z-50">
 					<h2><GradientText className="gray">Providing Rapid Innovation</GradientText></h2>
-					<p className="opacity-60">Open-source development provides strategic advantages by increasing velocity of product development, improved security and ultimate flexibility with no licensing fees. Web3 is a rapidly growing technology and building openly ensures the technology stack is never out of date. Holaplex is the open source Web3 contributor.</p>
+					<p className="opacity-60">Open-source development provides strategic advantages through faster product development, improved security and flexibility with no licensing fees. Web3 is a rapidly growing space and building openly ensures the technology stack is always up to date. Holaplex is a leading open source Web3 contributor.</p>
 					<div className='mt-12 hidden lg:block'>
 						<Image src='/img/cool-chart.svg' alt='' width={1432} height={495} />
 					</div>
