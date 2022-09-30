@@ -45,7 +45,7 @@ export default function Index() {
 					</Container>
 				</Section>
 
-				<ProductSection image='/uploads/create-drop-mock-1.jpg'>
+				<ProductSection image={<Image src='/uploads/create-drop-mock-1.jpg' width={1316} height={852} />}>
 					<div className='subtitle text-highlight'>Drops Center</div>
 					<h3><GradientText>Create NFTs At Scale</GradientText></h3>
 					<p>
@@ -53,7 +53,7 @@ export default function Index() {
 					</p>
 				</ProductSection>
 
-				<ProductSection image='/uploads/marketplace-customer-facing-2.jpg' flipped>
+				<ProductSection image={<Image src='/uploads/marketplace-customer-facing-2.jpg' width={1316} height={854} />} flipped>
 					<div className='subtitle text-highlight'>Update NFTs</div>
 					<h3><GradientText>Edit and Manage Your NFTs</GradientText></h3>
 					<p>
@@ -61,7 +61,7 @@ export default function Index() {
 					</p>
 				</ProductSection>
 
-				<ProductSection noWindow image='/uploads/Group-1000000828.jpg'>
+				<ProductSection noWindow image={<Image src='/uploads/Group-1000000828.jpg' width={1271} height={1052} />}>
 					<div className='subtitle text-highlight'>Bulk Sending</div>
 					<h3><GradientText>Send NFTs to Your Customers</GradientText></h3>
 					<p>
@@ -69,7 +69,7 @@ export default function Index() {
 					</p>
 				</ProductSection>
 
-				<ProductSection image='/uploads/marketplace-home-page-customer-facing.jpg' flipped>
+				<ProductSection image={<Image src='/uploads/marketplace-home-page-customer-facing.jpg' width={1316} height={850} />} flipped>
 					<div className='subtitle text-highlight'>Powerful Reporting</div>
 					<h3><GradientText>Insights You Need To Drive Your Business</GradientText></h3>
 					<p>
