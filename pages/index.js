@@ -32,13 +32,7 @@ export default function Index() {
 					<p className="mb-4">Enterprise-grade NFT Solutions</p>
 					<h2 className="mt-0"> Maximize your brand’s potential in Web3</h2>
 					<div className="my-4 lg:my-8 flex flex-wrap justify-center gap-4">
-						<SubtleGlassTile className="w-48 justify-end">
-							<img width="32" height="32" src='/img/icons/external-link.svg' alt='' className="absolute top-0 right-0" />
-							<p className="w-full text-left mb-0 mt-6 -mb-2 -ml-2">
-								Get Started
-							</p>
-							<SmartLink href='/contact' className="absolute inset-0 z-50" />
-						</SubtleGlassTile>
+						<Button href='/contact'>Get Started</Button>
 					</div>
 				</Container>
 			</Section>
