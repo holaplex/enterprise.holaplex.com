@@ -53,7 +53,7 @@ export default function Index() {
 					</p>
 				</ProductSection>
 
-				<ProductSection image='/uploads/marketplace home page (customer facing) 2.jpg' flipped>
+				<ProductSection image='/uploads/marketplace-customer-facing-2.jpg' flipped>
 					<div className='subtitle text-highlight'>Update NFTs</div>
 					<h3><GradientText>Edit and Manage Your NFTs</GradientText></h3>
 					<p>
@@ -61,7 +61,7 @@ export default function Index() {
 					</p>
 				</ProductSection>
 
-				<ProductSection noWindow image='/uploads/Group 1000000828.jpg'>
+				<ProductSection noWindow image='/uploads/Group-1000000828.jpg'>
 					<div className='subtitle text-highlight'>Bulk Sending</div>
 					<h3><GradientText>Send NFTs to Your Customers</GradientText></h3>
 					<p>
@@ -69,7 +69,7 @@ export default function Index() {
 					</p>
 				</ProductSection>
 
-				<ProductSection image='/uploads/marketplace home page (customer facing).jpg' flipped>
+				<ProductSection image='/uploads/marketplace-home-page-customer-facing.jpg' flipped>
 					<div className='subtitle text-highlight'>Powerful Reporting</div>
 					<h3><GradientText>Insights You Need To Drive Your Business</GradientText></h3>
 					<p>
