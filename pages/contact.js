@@ -62,10 +62,11 @@ export default function Index() {
 			<div className="text-black bg-white relative overflow-hidden">
 				<Section className="relative my-6 lg:my-12 py-6 lg:py-12">
 					<div className="absolute rounded-full w-24 lg:w-64 aspect-square bg-[#B4419F] top-0 left-0 blur-[256px]" />
-					<Container className="left relative z-10 flex flex-wrap">
+					<Container variant="wide" className="left relative z-10 flex flex-wrap items-start">
 						<div className="lg:w-1/2 lg:p-4">
-							<h4 className="mt-0 mb-4"><GradientText>Discover what Holaplex can do to help maximize your web3 strategy.</GradientText></h4>
-							<p>Connect with our team of experts to get a comprehensive and customized walkthrough of our enterprise-grade solutions and services. Discover how Holaplex is partnering with leading brands to maximize shareholder value.</p>
+							<h3 className="mt-0 mb-4 uppercase"><GradientText>Discover what Holaplex can do to help maximize your web3 strategy.</GradientText></h3>
+							<p>Connect with our team of experts to get a comprehensive and customized walkthrough of our enterprise-grade solutions and white-glove services. Discover how Holaplex is partnering with leading brands to maximize shareholder value. </p>
+							<Image src='/uploads/Illo01_Final.png' width={869} height={772} />
 						</div>
 						<div className="lg:w-1/2 lg:p-4 lg:bg-white lg:shadow-2xl lg:rounded-xl">
 							<iframe src="/contact-form.html" className="w-full" style={{ aspectRatio: '1/1.25' }}></iframe>
