@@ -33,7 +33,7 @@ export default function Index() {
 				<div className="absolute rounded-full w-24 h-48 bg-[#B4419F] top-[-5%] left-[-10%] blur-[120px]" />
 				<div className="flex flex-col lg:flex-row lg:my-12 my-6 justify-center items-center lg:items-center relative z-50">
 					<div className="lg:w-1/2 w-full px-8 max-w-xl">
-						<h1 className="text-2xl lg:text-6xl mt-0">
+						<h1 className="mt-0">
 							<GradientText>Your Web3 Partner with Enterprise Experience</GradientText>
 						</h1>
 						<p>
