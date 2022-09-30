@@ -12,7 +12,7 @@ export default function SectionHero(props) {
 		<div className="absolute rounded-full w-24 h-48 bg-[#B4419F] bottom-1/3 right-[10%] blur-[120px]" />
 
 
-		<Container className="flex flex-col lg:my-12 justify-center items-center relative z-50">
+		<Container variant="wide" className="flex flex-col lg:my-12 justify-center items-center relative z-50">
 			{props.children}
 		</Container>
 
