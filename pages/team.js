@@ -13,7 +13,7 @@ function TeamMember(props) {
 		}}>
 			<Image src={image} layout="fill" objectFit="contain" objectPosition='bottom' />
 		</div>
-		<h4>{name}</h4>
+		<h5 className="mt-4">{name}</h5>
 		<p>{role}</p>
 	</div>
 }
@@ -43,9 +43,9 @@ export default function Index() {
 						{/*<div className="absolute top-0 right-0 bottom-0 w-48 z-10 hidden lg:block" style={{
 							background: 'linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1))',
 						}} />*/}
-						<TeamMember name="Alex Kehaya" role="CEO" image="/img/team/Alex Kehaya.png" color="#6CCDD6" />
-						<TeamMember name="Anja Bedford" role="COO" image="/img/team/Anja Bedford.png" color="#A4E8DB" />
-						<TeamMember name="Matthew Stotts" role="CSO" image="/img/team/Matthew Stotts.png" color="#C7F5F9" />
+						<TeamMember name="Alex Kehaya" role="CEO" image="/img/team/Alex-Kehaya.png" color="#6CCDD6" />
+						<TeamMember name="Anja Bedford" role="COO" image="/img/team/Anja-Bedford.png" color="#A4E8DB" />
+						<TeamMember name="Matthew Stotts" role="CSO" image="/img/team/Matthew-Stotts.png" color="#C7F5F9" />
 					</div>
 				</div>
 			</Section>
