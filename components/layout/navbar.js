@@ -8,7 +8,7 @@ const NavItem = ({ children, href, dropdown }) => {
 	const [hover, setHover] = useState(false);
 
 	return (
-		<li className="mx-2 inline-block relative" onMouseEnter={e => {
+		<li className="inline-block relative" onMouseEnter={e => {
 			setHover(true);
 		}} onMouseLeave={e => {
 			setHover(false);
@@ -27,12 +27,12 @@ const Navbar = () => {
 		<>
 			<div className="relative z-50 text-white">
 				<nav className="max-w-7xl mx-auto w-11/12 px-2 py-4 box-border flex justify-between items-center">
-					<div className="my-0 font-semibold text-white">
+					<div className="my-0 font-semibold text-white max-w-[165px] w-full">
 						<SmartLink href="/">
-							<Image src="/img/enterprise.svg" width={165} height={15} alt="" />
+							<Image src="/img/enterprise.svg" width={1509} height={143} alt="" />
 						</SmartLink>
 					</div>
-					<ul id="navItems" className="hidden md:block">
+					<ul id="navItems" className="hidden md:flex gap-10">
 						<NavItem href='/'>
 							Home
 						</NavItem>
