@@ -3,10 +3,20 @@ import Image from "next/image";
 import SmartLink from "../smartlink";
 import * as Icon from 'akar-icons';
 
-const NavItem = ({ children, href }) => {
+const NavItem = ({ children, href, dropdown }) => {
+
+	const [hover, setHover] = useState(false);
+
 	return (
-		<li className="mx-2 inline-block">
-			<SmartLink href={href}>{children}</SmartLink>
+		<li className="mx-2 inline-block relative" onMouseEnter={e => {
+			setHover(true);
+		}} onMouseLeave={e => {
+			setHover(false);
+		}}>
+			<SmartLink href={href}>{children}{dropdown ? <Icon.ChevronDown className="inline-block w-4 ml-1" /> : <></>}</SmartLink>
+			{dropdown ? <div className={'absolute top-[100%] w-[300%] left-[-100%] text-center p-2 bg-gray-600 shadow-xl flex flex-col gap-2 rounded ' + (hover ? "block" : "hidden")}>
+				{dropdown}
+			</div> : <></>}
 		</li>
 	);
 };
@@ -26,7 +36,14 @@ const Navbar = () => {
 						<NavItem href='/'>
 							Home
 						</NavItem>
-						<NavItem href='/products'>
+						<NavItem href='/products' dropdown={<>
+							<NavItem href='/product/command-center'>
+								Command Center
+							</NavItem>
+							<NavItem href='/product/marketplace'>
+								Marketplace
+							</NavItem>
+						</>}>
 							Products
 						</NavItem>
 						<NavItem href='/team'>
