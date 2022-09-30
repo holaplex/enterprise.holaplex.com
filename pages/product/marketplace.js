@@ -40,7 +40,7 @@ export default function Index() {
 				<Section className="bg-gray-50 text-black lg:text-center lg:mt-10 py-4">
 					<Container variant='small'>
 						<h4>Holaplex <span className="font-thin">Marketplaces</span></h4>
-						<h3><GradientText>Get the best that web3 has to offer</GradientText></h3>
+						<h2><GradientText>Get the best that web3 has to offer</GradientText></h2>
 						<p>Feature-complete marketplaces with advanced features from top protocol integration</p>
 					</Container>
 				</Section>
