@@ -20,7 +20,7 @@ const Element = styled.div`
  * @returns
  */
 const Container = ({ children, className, variant }) => {
-	let width = "max-w-4xl";
+	let width = "max-w-5xl";
 
 	switch (variant) {
 		case "slim":
@@ -33,7 +33,7 @@ const Container = ({ children, className, variant }) => {
 			break;
 	}
 
-	return <Element className={width + " mx-auto w-11/12 p-4 md:p-8 bg-base-dark text-content rounded-2xl my-8 " + className}>{children}</Element>;
+	return <Element className={width + " mx-auto w-full p-4 md:p-8 bg-base-dark text-content rounded-2xl my-8 " + className}>{children}</Element>;
 };
 
 export default Container;

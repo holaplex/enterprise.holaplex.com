@@ -16,7 +16,7 @@ body {
 h1,
 h2,
 h3 {
-	margin: 1.5em 0 0.5em;
+	margin: 0.25em 0 0.25em;
 	font-family: "Ratofy", sans-serif;
 }
 
@@ -28,7 +28,7 @@ h6 {
 }
 
 h1 {
-	@apply text-xl;
+	@apply text-lg;
 	@media (min-width: 1024px) {
 		@apply text-3xl;
 	}
