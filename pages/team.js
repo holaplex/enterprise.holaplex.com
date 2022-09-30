@@ -4,6 +4,7 @@ import Metadata from "../components/metadata";
 import Image from "next/image";
 import Container from "../components/container";
 import Button from "../components/button";
+import GradientText from '../components/gradientText';
 
 function TeamMember(props) {
 	const { name, role, color, image } = props;
@@ -33,7 +34,7 @@ export default function Index() {
 				<div className="flex flex-col lg:flex-row lg:my-12 my-6 justify-center items-center lg:items-center relative z-50">
 					<div className="lg:w-1/2 w-full px-8 max-w-xl">
 						<h1 className="text-2xl lg:text-6xl mt-0">
-							Your Web3 Partner with Enterprise Experience
+							<GradientText>Your Web3 Partner with Enterprise Experience</GradientText>
 						</h1>
 						<p>
 							Holaplex is a leader in open-source web3 technologies. We bring our years of experience building in the crypto / web3 ecosystem and delivering success at top global brands. For brands, web3 represents a massive opportunity where exponential growth is possible, yet there exist unique challenges that must be considered. When you work with Holaplex you get a partner.
