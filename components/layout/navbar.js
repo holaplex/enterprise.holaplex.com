@@ -100,6 +100,11 @@ const Navbar = () => {
 					zIndex: 9999,
 					transition: "left 1s ease",
 				}}
+				onClick={e => {
+					if (e.target.style.transition) {
+						setActive(false);
+					}
+				}}
 			>
 				<div className="bg-white w-1/2 h-full text-black flex flex-col gap-2 p-4">
 					<div
