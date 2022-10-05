@@ -1,4 +1,4 @@
 ---
-title: "Holaplex Enterprise"
-description: "Build better apps on Solana"
+title: "Holaplex"
+description: "Web3 commerce solutions that scale"
 ---
