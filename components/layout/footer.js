@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import SmartLink from "../smartlink";
+import { FaDiscord, FaGithub, FaMedium, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
 	return (
@@ -10,7 +11,24 @@ const Footer = () => {
 					<SmartLink href="/">
 						<Image src="/img/enterprise.svg" width={165} height={15} alt="" />
 					</SmartLink>
-					<p>Copyright © {new Date().getFullYear()}</p>
+					<p className="my-4">Copyright © {new Date().getFullYear()}</p>
+					<p className="text-[30px]">
+						<a href="https://twitter.com/holaplex" className="inline-block m-1" target="_blank" rel="noreferrer">
+							<FaTwitter />
+						</a>
+						<a href="https://discord.com/invite/holaplex" className="inline-block m-1" target="_blank" rel="noreferrer">
+							<FaDiscord />
+						</a>
+						<a href="https://github.com/holaplex" className="inline-block m-1" target="_blank" rel="noreferrer">
+							<FaGithub />
+						</a>
+						<a href="https://www.youtube.com/channel/UCHcdpZiDj7LiBifxetVH29Q" className="inline-block m-1" target="_blank" rel="noreferrer">
+							<FaYoutube />
+						</a>
+						<a href="https://medium.com/holaplex" className="inline-block m-1" target="_blank" rel="noreferrer">
+							<FaMedium />
+						</a>
+					</p>
 				</div>
 				<div className="lg:w-1/4" />
 				<div className="lg:w-1/2">
