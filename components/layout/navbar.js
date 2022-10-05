@@ -44,7 +44,7 @@ const Navbar = () => {
 	const [active, setActive] = useState(false);
 	return (
 		<>
-			<div className="relative z-50 text-white">
+			<div className="relative z-50 text-white border-b border-gray-600">
 				<nav className="max-w-7xl mx-auto w-11/12 px-2 py-4 box-border flex justify-between items-center">
 					<div className="my-0 font-semibold text-white max-w-[165px] w-full">
 						<SmartLink href="/">
