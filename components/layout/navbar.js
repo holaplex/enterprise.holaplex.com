@@ -101,9 +101,9 @@ const Navbar = () => {
 					transition: "left 1s ease",
 				}}
 			>
-				<div className="bg-white w-1/2 h-full text-black flex flex-col gap-2">
+				<div className="bg-white w-1/2 h-full text-black flex flex-col gap-2 p-4">
 					<div
-						className="block md:hidden p-2 w-full"
+						className="block md:hidden pb-2 w-full"
 						onClick={(e) => {
 							e.preventDefault();
 							setActive(false);
