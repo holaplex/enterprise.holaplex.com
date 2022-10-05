@@ -8,3 +8,4 @@ out/
 .netlify/edge-functions
 .netlify/edge-functions-import-map.json
 public/admin/config.yml
+package-lock.json
