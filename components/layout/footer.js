@@ -15,9 +15,8 @@ const Footer = () => {
 				<div className="lg:w-1/4" />
 				<div className="lg:w-1/2">
 					<ul className="lg:flex justify-around flex-wrap gap-4 w-full">
-						<li><SmartLink href='/'>Terms of Service</SmartLink></li>
-						<li><SmartLink href='/'>Privacy Policy</SmartLink></li>
-						<li><SmartLink href='/'>Cookies Settings</SmartLink></li>
+						<li><SmartLink href='https://docs.google.com/document/d/1jskpoCdDm7DU2IbeXwRhhl5LGiNhonAx2HsmfJlDsEs/edit'>Terms of Service</SmartLink></li>
+						<li><SmartLink href='https://docs.google.com/document/d/12uQU7LbLUd0bY7Nz13-F9cua5Wk8mnRNBlyDzF6gRmo/edit'>Privacy Policy</SmartLink></li>
 						<li><SmartLink href='https://blog.holaplex.com'>Blog</SmartLink></li>
 					</ul>
 				</div>
