@@ -44,7 +44,7 @@ const Navbar = () => {
 	const [active, setActive] = useState(false);
 	return (
 		<>
-			<div className="relative z-50 text-white border-b border-gray-600">
+			<div className="relative z-50 text-white border-b border-[rgba(255,255,255,0.25)]">
 				<nav className="max-w-7xl mx-auto w-11/12 px-2 py-4 box-border flex justify-between items-center">
 					<div className="my-0 font-semibold text-white max-w-[165px] w-full">
 						<SmartLink href="/">
@@ -78,7 +78,7 @@ const Navbar = () => {
 					<ul className="hidden md:block">
 						<NavItem href="/contact">
 							Contact Us
-							<div className="absolute -top-[20%] -left-[20%] w-[140%] h-[140%] border border-gray-600 rounded" />
+							<div className="absolute -top-[20%] -left-[20%] w-[140%] h-[140%] border border-[rgba(255,255,255,0.25)] rounded" />
 						</NavItem>
 					</ul>
 					<div
