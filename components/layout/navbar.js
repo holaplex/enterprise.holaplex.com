@@ -52,6 +52,9 @@ const Navbar = () => {
 						<NavItem href='https://blog.holaplex.com'>
 							Blog
 						</NavItem>
+						<NavItem href="https://market.holaplex.com">
+							Explore NFTs
+						</NavItem>
 					</ul>
 					<ul className="hidden md:block">
 						<NavItem href='/contact'>
