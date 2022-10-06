@@ -11,8 +11,8 @@ import SubtleGlassTile from "../components/subtleGlassTile";
 import * as Icon from 'akar-icons';
 import GradientText from "../components/gradientText";
 
-import LaptopImage from '../public/img/laptop.webp';
-import PhoneImage from '../public/img/phone.webp';
+import LaptopImage from '../public/img/laptop.png';
+import PhoneImage from '../public/img/phone.png';
 
 export default function Index() {
 	const { title, description } = attributes;
