@@ -4,13 +4,11 @@ import Layout from "../components/layout";
 import Section from "../components/section";
 import Container from "../components/container";
 import Metadata from "../components/metadata";
-import styled from "@emotion/styled";
 import Image from "next/image";
 import Button from "../components/button";
 import { css } from "@emotion/react";
 import SubtleGlassTile from "../components/subtleGlassTile";
 import * as Icon from 'akar-icons';
-import SmartLink from "../components/smartlink";
 import GradientText from "../components/gradientText";
 
 export default function Index() {
@@ -42,12 +40,18 @@ export default function Index() {
 					<div className="flex flex-wrap justify-around w-full mb-8">
 						<div className="w-12 lg:w-24"><Image alt='' src='/img/logos/opensea.png' width={488} height={117} /></div>
 					</div>
-					<p className="mb-4">"We are able to quickly and effectively build Solana NFTs drops for our launchpad program with Holaplex’s minting tools."</p>
-					<h4 className="font-bold text-gray-400 text-center">
+					<p className="mb-4 relative">
+						<img className="absolute top-0 right-[100%] lg:w-6 w-4" width={32} height={32} src='/img/icons/quote-left.svg' />
+						<span>
+							We are able to quickly and effectively build Solana NFTs drops for our launchpad program with Holaplex’s minting tools.
+						</span>
+						<img className="absolute top-0 left-[100%] lg:w-6 w-4" width={32} height={32} src='/img/icons/quote-right.svg' />
+					</p>
+					<p className="lg:text-[32px] font-bold text-gray-400 text-center">
 						-Adam Montgomery
 						<br />
 						<span className="font-thin">Head of Blockchain</span>
-					</h4>
+					</p>
 				</Container>
 				<Container>
 					<div className="flex flex-wrap justify-around items-center text-center lg:text-left">
