@@ -27,7 +27,7 @@ export default function Index() {
 
 				<Section className="-mt-24 lg:-mt-96 hidden lg:block">
 					<div className='w-7/12 max-w-3xl mx-auto drop-shadow-lg'>
-						<Image src='/uploads/marketplace-1.jpg' width={2248} height={1451} priority className="rounded-xl" />
+						<Image src='/uploads/marketplace-1.jpg' width={1673} height={1080} priority className="rounded-xl" />
 						<div className="absolute top-1/4 -left-1/4 w-1/3 drop-shadow-lg">
 							<Image src='/uploads/marketplace-3.jpg' width={453} height={410} priority className="rounded-xl" />
 						</div>
