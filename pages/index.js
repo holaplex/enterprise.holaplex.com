@@ -37,7 +37,7 @@ export default function Index() {
 
 			<Section className="text-black bg-white">
 				<Container className="text-center">
-					<div className="flex flex-wrap justify-around items-center w-full -mt-8 mb-8 gap-4">
+					<div className="flex flex-wrap justify-center items-center w-full -mt-8 mb-8 gap-4 lg:gap-16">
 						<div className="w-16 lg:w-24"><a href='https://opensea.io/' target="_blank" rel="noreferrer"><img alt='OpenSea' src='/img/logos/opensea.png' width={488} height={117} /></a></div>
 						<div className="w-16 lg:w-24"><a href='https://campus.io/' target="_blank" rel="noreferrer"><img alt='Campus Legends' src='/img/logos/campus.png' width={304} height={80} /></a></div>
 						<div className="w-16 lg:w-24"><a href='https://www.dialect.to/' target="_blank" rel="noreferrer"><img alt='Dialect' src='/img/logos/dialect.png' width={255} height={80} /></a></div>
