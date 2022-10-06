@@ -2,16 +2,7 @@ import styled from "@emotion/styled";
 import React from "react";
 import GenericContent from "./genericContent";
 
-const Element = styled.div`
-	& > *:first-of-type(h1),
-	& > ${GenericContent} > *:first-of-type(h1) {
-		margin-top: 0;
-	}
-	& > *:last-child,
-	& > ${GenericContent} > *:last-child {
-		margin-bottom: 0;
-	}
-`;
+const Element = styled.div``;
 
 /**
  * Constrains content to the center of the page, adds a background color, padding, margin, and rounded borders.
