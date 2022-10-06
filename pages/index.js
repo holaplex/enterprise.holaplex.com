@@ -11,6 +11,9 @@ import SubtleGlassTile from "../components/subtleGlassTile";
 import * as Icon from 'akar-icons';
 import GradientText from "../components/gradientText";
 
+import LaptopImage from '../public/img/laptop.webp';
+import PhoneImage from '../public/img/phone.webp';
+
 export default function Index() {
 	const { title, description } = attributes;
 
@@ -134,7 +137,7 @@ export default function Index() {
 				<Section className="relative my-6 lg:my-12 py-6 lg:py-12">
 					<div className="absolute rounded-full w-24 lg:w-64 aspect-square bg-[#B4419F] lg:top-1/4 right-[30%] blur-[256px]" />
 					<div className="lg:absolute relative top-0 bottom-0 right-0 w-full lg:w-1/2 lg:aspect-auto aspect-video">
-						<Image src='/img/laptop.webp' layout='fill' objectFit="contain" objectPosition="center right" />
+						<Image src={LaptopImage} layout='fill' objectFit="contain" objectPosition="center right" />
 					</div>
 					<Container className="left relative z-10">
 						<div className="lg:w-1/2">
@@ -149,7 +152,7 @@ export default function Index() {
 				<Section className="relative my-6 lg:my-12 py-6 lg:py-12">
 					<div className="absolute rounded-full w-24 lg:w-64 aspect-square bg-[#B4419F] lg:top-1/4 left-[10%] blur-[256px]" />
 					<div className="lg:absolute relative top-0 bottom-0 left-0 w-full lg:w-1/2 lg:aspect-auto aspect-video">
-						<Image src='/img/phone.webp' layout='fill' objectFit="contain" objectPosition="center" />
+						<Image src={PhoneImage} layout='fill' objectFit="contain" objectPosition="center" />
 					</div>
 					<Container className="left relative z-10">
 						<div className="lg:w-1/2 lg:ml-auto">
