@@ -37,15 +37,19 @@ export default function Index() {
 
 			<Section className="text-black bg-white">
 				<Container className="text-center">
-					<div className="flex flex-wrap justify-around w-full mb-8">
+					<div className="flex flex-wrap justify-around items-center w-full -mt-8 mb-8">
 						<div className="w-12 lg:w-24"><Image alt='' src='/img/logos/opensea.png' width={488} height={117} /></div>
+						<div className="w-12 lg:w-24"><Image alt='' src='/img/logos/campus.png' width={304} height={80} /></div>
+						<div className="w-12 lg:w-24"><Image alt='' src='/img/logos/dialect.png' width={255} height={80} /></div>
+						<div className="w-12 lg:w-24"><Image alt='' src='/img/logos/metaplex.png' width={416} height={48} /></div>
+						<div className="w-12 lg:w-24"><Image alt='' src='/img/logos/nation.png' width={203} height={80} /></div>
 					</div>
 					<p className="mb-4 relative">
-						<img className="absolute top-0 right-[100%] lg:w-6 w-4" width={32} height={32} src='/img/icons/quote-left.svg' />
+						<img className="absolute top-0 right-[100%] lg:w-6 w-4" alt='' width={32} height={32} src='/img/icons/quote-left.svg' />
 						<span>
 							We are able to quickly and effectively build Solana NFTs drops for our launchpad program with Holaplex’s minting tools.
 						</span>
-						<img className="absolute top-0 left-[100%] lg:w-6 w-4" width={32} height={32} src='/img/icons/quote-right.svg' />
+						<img className="absolute top-0 left-[100%] lg:w-6 w-4" alt='' width={32} height={32} src='/img/icons/quote-right.svg' />
 					</p>
 					<p className="lg:text-[32px] font-bold text-gray-400 text-center">
 						-Adam Montgomery

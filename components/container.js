@@ -3,8 +3,8 @@ import React from "react";
 import GenericContent from "./genericContent";
 
 const Element = styled.div`
-	& > *:first-child,
-	& > ${GenericContent} > *:first-child {
+	& > *:first-of-type(h1),
+	& > ${GenericContent} > *:first-of-type(h1) {
 		margin-top: 0;
 	}
 	& > *:last-child,
