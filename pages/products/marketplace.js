@@ -45,7 +45,7 @@ export default function Index() {
 					</Container>
 				</Section>
 
-				<ProductSection flipped image={<Image src='/uploads/marketplace-sell.jpg' width={1316} height={849} />}>
+				<ProductSection flipped image={<Image src='/uploads/marketplace-sell.jpg' width={1200} height={774} />}>
 					<div className='subtitle text-highlight'>NFT Drops</div>
 					<h3><GradientText>Sell NFTs at scale</GradientText></h3>
 					<p>
@@ -53,7 +53,7 @@ export default function Index() {
 					</p>
 				</ProductSection>
 
-				<ProductSection image={<Image src='/uploads/marketplace-hub.jpg' width={1316} height={851} />}>
+				<ProductSection image={<Image src='/uploads/marketplace-hub.jpg' width={1200} height={776} />}>
 					<div className='subtitle text-highlight'>Marketplace</div>
 					<h3><GradientText>The NFT trading hub for your brand</GradientText></h3>
 					<p>
@@ -61,7 +61,7 @@ export default function Index() {
 					</p>
 				</ProductSection>
 
-				<ProductSection flipped image={<Image src='/uploads/marketplace-onboard.jpg' width={1316} height={850} />}>
+				<ProductSection flipped image={<Image src='/uploads/marketplace-onboard.jpg' width={1200} height={775} />}>
 					<div className='subtitle text-highlight'>User Management</div>
 					<h3><GradientText>Easily onboard your customers into web3</GradientText></h3>
 					<p>
