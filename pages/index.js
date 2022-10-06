@@ -37,14 +37,14 @@ export default function Index() {
 
 			<Section className="text-black bg-white">
 				<Container className="text-center">
-					<div className="flex flex-wrap justify-around items-center w-full -mt-8 mb-8">
-						<div className="w-16 lg:w-24"><a href='https://opensea.io/' target="_blank" rel="noreferrer"><Image alt='OpenSea' src='/img/logos/opensea.png' width={488} height={117} /></a></div>
-						<div className="w-16 lg:w-24"><a href='https://campus.io/' target="_blank" rel="noreferrer"><Image alt='Campus Legends' src='/img/logos/campus.png' width={304} height={80} /></a></div>
-						<div className="w-16 lg:w-24"><a href='https://www.dialect.to/' target="_blank" rel="noreferrer"><Image alt='Dialect' src='/img/logos/dialect.png' width={255} height={80} /></a></div>
-						<div className="w-16 lg:w-24"><a href='https://www.metaplex.com/' target="_blank" rel="noreferrer"><Image alt='Metaplex' src='/img/logos/metaplex.png' width={416} height={48} /></a></div>
-						<div className="w-16 lg:w-24"><a href='https://nation.io/' target="_blank" rel="noreferrer"><Image alt='' src='/img/logos/nation.png' width={203} height={80} /></a></div>
+					<div className="flex flex-wrap justify-around items-center w-full -mt-8 mb-8 gap-4">
+						<div className="w-16 lg:w-24"><a href='https://opensea.io/' target="_blank" rel="noreferrer"><img alt='OpenSea' src='/img/logos/opensea.png' width={488} height={117} /></a></div>
+						<div className="w-16 lg:w-24"><a href='https://campus.io/' target="_blank" rel="noreferrer"><img alt='Campus Legends' src='/img/logos/campus.png' width={304} height={80} /></a></div>
+						<div className="w-16 lg:w-24"><a href='https://www.dialect.to/' target="_blank" rel="noreferrer"><img alt='Dialect' src='/img/logos/dialect.png' width={255} height={80} /></a></div>
+						<div className="w-16 lg:w-24"><a href='https://www.metaplex.com/' target="_blank" rel="noreferrer"><img alt='Metaplex' src='/img/logos/metaplex.png' width={416} height={48} /></a></div>
+						<div className="w-16 lg:w-24"><a href='https://nation.io/' target="_blank" rel="noreferrer"><img alt='Nation' src='/img/logos/nation.png' width={203} height={80} /></a></div>
 					</div>
-					<div className="w-16 lg:w-24 mx-auto mt-8 lg:mt-16"><a href='https://opensea.io/' target="_blank" rel="noreferrer"><Image alt='OpenSea' src='/img/logos/opensea.png' width={488} height={117} /></a></div>
+					<div className="w-16 lg:w-24 mx-auto mt-8 lg:mt-16"><a href='https://opensea.io/' target="_blank" rel="noreferrer"><img alt='OpenSea' src='/img/logos/opensea.png' width={488} height={117} /></a></div>
 					<p className="mb-4 relative">
 						<img className="absolute top-0 right-[100%] lg:w-6 w-4" alt='' width={32} height={32} src='/img/icons/quote-left.svg' />
 						<span>
