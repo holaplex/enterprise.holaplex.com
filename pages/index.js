@@ -1,4 +1,4 @@
-import { attributes } from "../content/pages/home.md";
+import { attributes } from "../content/home.md";
 
 import Layout from "../components/layout";
 import Section from "../components/section";

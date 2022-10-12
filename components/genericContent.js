@@ -12,7 +12,7 @@ export const GenericContent = styled.div`
 	}
 
 	a {
-		color: white;
+		color: #528AD5;
 		text-decoration: underline;
 	}
 
