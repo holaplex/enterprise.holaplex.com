@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-	font-size: 18px;
+  font-size: 18px;
 }
 
 body {
-	color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /*
@@ -16,42 +16,42 @@ body {
 h1,
 h2,
 h3 {
-	margin: 0.25em 0 0.25em;
-	font-family: "Ratofy", sans-serif;
+  margin: 0.25em 0 0.25em;
+  font-family: "Ratofy", sans-serif;
 }
 
 h4,
 h5,
 h6 {
-	font-family: "Poppins", sans-serif;
-	font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 
 h1 {
-	@apply text-lg;
-	@media (min-width: 1024px) {
-		@apply text-3xl;
-	}
-	font-weight: 400;
+  @apply text-lg;
+  @media (min-width: 1024px) {
+    @apply text-3xl;
+  }
+  font-weight: 400;
 }
 
 h2 {
-	@apply text-lg;
-	@media (min-width: 1024px) {
-		@apply text-2xl;
-	}
-	font-weight: 400;
+  @apply text-lg;
+  @media (min-width: 1024px) {
+    @apply text-2xl;
+  }
+  font-weight: 400;
 }
 
 h3 {
-	@apply text-lg;
-	@media (min-width: 1024px) {
-		@apply text-xl;
-	}
+  @apply text-lg;
+  @media (min-width: 1024px) {
+    @apply text-xl;
+  }
 }
 
 h4,
 h5,
 h6 {
-	@apply text-lg;
+  @apply text-lg;
 }

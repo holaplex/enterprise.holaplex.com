@@ -1,36 +1,36 @@
 body {
-	background: black;
-	color: white;
-	font-family: "Poppins", sans-serif;
+  background: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 @font-face {
-	font-family: "Poppins";
-	src: url(/fonts/Poppins-Light.otf);
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-Light.otf);
 }
 
 .frame-content {
-	padding: 15px;
-	border-radius: 15px;
-	border: 1px solid gray;
-	max-width: calc(726px + 30px);
-	margin: auto;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid gray;
+  max-width: calc(726px + 30px);
+  margin: auto;
 }
 
 div > img {
-	display: block;
-	margin: 0 auto;
-	max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .post-date {
-	color: rgba(255, 255, 255, 0.6);
-	text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
 }
 
 .post-content p {
-	color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .post-content a {
-	color: white;
+  color: white;
 }

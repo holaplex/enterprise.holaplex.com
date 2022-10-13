@@ -7,8 +7,12 @@ import React from "react";
  * @returns
  */
 const Section = (props) => {
-	const { children, className } = props;
-	return <div {...props} className={"bg-base text-content " + className}>{children}</div>;
+  const { children, className } = props;
+  return (
+    <div {...props} className={"bg-base text-content " + className}>
+      {children}
+    </div>
+  );
 };
 
 export default Section;
