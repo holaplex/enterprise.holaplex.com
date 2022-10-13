@@ -45,7 +45,7 @@ export default function Index() {
 						<TeamMember name="Alex Kehaya" role="CEO" image="/img/team/Alex-Kehaya.png" color="#6CCDD6" />
 						<TeamMember name="Anja Bedford" role="COO" image="/img/team/Anja-Bedford.png" color="#A4E8DB" />
 						<TeamMember name="Matthew Stotts" role="CSO" image="/img/team/Matthew-Stotts.png" color="#C7F5F9" />
-						<TeamMember name="Brian Fox" role="CTO" image="/img/team/Brian-Fox.png" objectFit="cover" color="#C7F5F9" />
+						<TeamMember name="Brian Fox" role="CTO" image="/img/team/BrianFoxPFP3.png" objectFit="cover" color="#C7F5F9" />
 					</div>
 				</div>
 			</Section>
