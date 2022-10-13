@@ -6,3 +6,5 @@ out/
 .netlify/
 public/admin/config.yml
 package-lock.json
+
+.env.local
