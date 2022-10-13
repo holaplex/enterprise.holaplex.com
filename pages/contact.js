@@ -1,5 +1,3 @@
-import { attributes } from "../content/pages/home.md";
-
 import Layout from "../components/layout";
 import Section from "../components/section";
 import Container from "../components/container";
@@ -42,11 +40,10 @@ const ServiceItem = styled.div`
 `;
 
 export default function Index() {
-	const { title, description } = attributes;
 
 	return (
 		<Layout>
-			<Metadata title={title} description={description} image='/img/screenshot.jpg' />
+			<Metadata title={"Contact"} image='/img/screenshot.jpg' />
 
 			<Section className="text-white text-center relative -mt-24 pt-24 bg-[#030E37] overflow-hidden" css={css`
 				background: linear-gradient(
