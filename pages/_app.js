@@ -1,5 +1,6 @@
 import splitbee from "@splitbee/web";
 import { useEffect } from "react";
+import Pixel from "../components/Pixel";
 import "../styles/fonts.scss";
 import "../styles/global.scss";
 
@@ -12,5 +13,11 @@ export default function MyApp({ Component, pageProps }) {
     });
   }, []);
 
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Pixel.Meta />
+      <Pixel.LeadFeeder />
+      <Component {...pageProps} />;
+    </>
+  );
 }

@@ -3,6 +3,9 @@ import { useRouter } from "next/router";
 import Script from "next/script";
 
 const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID;
+const LEAD_FEEDER_ID = process.env.NEXT_PUBLIC_LEAD_FEEDER_ID;
+
+const Pixel = {};
 
 const FacebookPixel = ({ children }) => {
   const router = useRouter();
@@ -29,11 +32,25 @@ const FacebookPixel = ({ children }) => {
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', ${FB_PIXEL_ID});
+        fbq('init', '${FB_PIXEL_ID}');
         fbq('track', 'PageView');
       `}
     </Script>
   );
 };
 
-export default FacebookPixel;
+Pixel.Meta = FacebookPixel;
+
+const LeadFeederPixel = ({ children }) => {
+  return (
+    <Script id="leadfeeder-pixel">
+      {`
+       (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; cs.async=1; fs.parentNode.insertBefore(cs,fs); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('${LEAD_FEEDER_ID}');
+      `}
+    </Script>
+  );
+};
+
+Pixel.LeadFeeder = LeadFeederPixel;
+
+export default Pixel;
