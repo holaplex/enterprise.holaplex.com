@@ -6,8 +6,8 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
-
+          <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+          <Script src="https://www.googletagmanager.com/gtag/js?id=G-MRLWZN25EP" />
           {/* Google Tag Manager */}
           <script
             dangerouslySetInnerHTML={{
@@ -16,6 +16,16 @@ export default class MyDocument extends Document {
 						j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 						})(window,document,'script','dataLayer','GTM-PZJC5WH');`,
+            }}
+          />
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-MRLWZN25EP');`,
             }}
           />
           {/* End Google Tag Manager */}
