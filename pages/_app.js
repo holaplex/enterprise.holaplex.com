@@ -17,7 +17,7 @@ export default function MyApp({ Component, pageProps }) {
     <>
       <Pixel.Meta />
       <Pixel.LeadFeeder />
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }
